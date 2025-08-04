@@ -1,7 +1,13 @@
 [
     {
-        "model_name": null,
+        "model_name": "baseline_eval_data",
         "average_score": 0.55025,
+        "sample_count": 100,
+        "eval_data_file_name": "./data/eval-data/data_eval_100.json"
+    },
+    {
+        "model_name": "flan-t5-domain-generator-final-5000",
+        "average_score": 0.5512166666666667,
         "sample_count": 100,
         "eval_data_file_name": "./data/eval-data/data_eval_100.json"
     },

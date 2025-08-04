@@ -56,7 +56,32 @@
 - Improvement strategies: What you tried and why
     - The edge case analysis pointed out that the evaluation strategy during edge case analysis is incorrectly picking up empty domains for inappropriate content. I also found that the model does not have a good handle on voilent data. Thus, given time contraint (which I gave myself), I went ahead to  improved on only type of data, violence. I added 80 new data points to that are violent in nature. I used chatgpt to generate some violent data which was tricky because chatgpt would not explictly synthetically generate data with violence in it. I trained on the previous fine tuned model due to time contraints.
 
-• Quantified results: Before/after metrics for each iteration
+- Quantified results: Before/after metrics for each iteration
+    - The results for different models are given below. The score ranged from 0 to 1. The baseline metric is evaluation data (not a predicted) and I calculated a score on it so that I could compare other models on it. Note: Yes, ideally the evaluation data metric should be around 0.97. This is a place where we could work to make the both data evaluation framework as well as the data quality better.
+
+        - We could see that the final model with 5080 training data points is performant, however I found out that it unlearned generating the domains in some cases. Thus, (1) the evaluation framework should be improved. 
+    ```
+        [
+            {
+                "model_name": "baseline_eval_data",
+                "average_score": 0.55025,
+                "sample_count": 100,
+                "eval_data_file_name": "./data/eval-data/data_eval_100.json"
+            },
+            {
+                "model_name": "flan-t5-domain-generator-final-5000",
+                "average_score": 0.5512166666666667,
+                "sample_count": 100,
+                "eval_data_file_name": "./data/eval-data/data_eval_100.json"
+            },
+            {
+                "model_name": "flan-t5-domain-generator-final-5080",
+                "average_score": 0.588495,
+                "sample_count": 100,
+                "eval_data_file_name": "./data/eval-data/data_eval_100.json"
+            }
+        ]
+    ```
 • LLM judge validation: How you ensured evaluation quality
 
 

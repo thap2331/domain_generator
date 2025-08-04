@@ -1,7 +1,7 @@
 [
     {
         "business_description": "beauty consulting for busy professionals",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "glowbeauty.com",
             "beautyperfect.dev",
             "elegantspa.me",
@@ -9,18 +9,14 @@
             "consultinghub.app"
         ],
         "industry": "beauty",
-        "predicted_domains": [
-            "consultinghub.ai",
-            "beautysalon.ai",
-            "consultinghub.com"
-        ],
+        "training_text": "Business: beauty consulting for busy professionals\nDomains: glowbeauty.com, beautyperfect.dev, elegantspa.me, flowio.co, consultinghub.app",
         "evaluation_results": {
-            "overall_score": 0.5333333333333334
+            "overall_score": 0.5700000000000001
         }
     },
     {
         "business_description": "custom modifications for car enthusiasts",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "carauto.org",
             "customco.app",
             "vehiclevehicle.org",
@@ -28,18 +24,14 @@
             "automotor.org"
         ],
         "industry": "automotive",
-        "predicted_domains": [
-            "custompro.io",
-            "custompro.app",
-            "custompro.com"
-        ],
+        "training_text": "Business: custom modifications for car enthusiasts\nDomains: carauto.org, customco.app, vehiclevehicle.org, modificationsio.ai, automotor.org",
         "evaluation_results": {
-            "overall_score": 0.5833333333333334
+            "overall_score": 0.5700000000000001
         }
     },
     {
         "business_description": "new high-end brewery experience",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "dashco.ly",
             "experiencebites.ly",
             "highapp.tech",
@@ -47,18 +39,14 @@
             "grilltaste.com"
         ],
         "industry": "food_beverage",
-        "predicted_domains": [
-            "highhub.app",
-            "savorydiner.app",
-            "highapp.app"
-        ],
+        "training_text": "Business: new high-end brewery experience\nDomains: dashco.ly, experiencebites.ly, highapp.tech, highcafe.ly, grilltaste.com",
         "evaluation_results": {
-            "overall_score": 0.5
+            "overall_score": 0.53
         }
     },
     {
         "business_description": "cryptocurrency trading in business district",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "zoomly.co",
             "wealthfinance.ly",
             "businessapp.app",
@@ -66,17 +54,14 @@
             "novatek.me"
         ],
         "industry": "fintech",
-        "predicted_domains": [
-            "tradingcapital.com",
-            "businesshub.app"
-        ],
+        "training_text": "Business: cryptocurrency trading in business district\nDomains: zoomly.co, wealthfinance.ly, businessapp.app, insurancemoney.io, novatek.me",
         "evaluation_results": {
-            "overall_score": 0.6
+            "overall_score": 0.47000000000000003
         }
     },
     {
         "business_description": "new millennials-focused subscription boxes",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "productsshop.io",
             "dashco.org",
             "primecommerce.dev",
@@ -84,17 +69,14 @@
             "getretail.dev"
         ],
         "industry": "ecommerce",
-        "predicted_domains": [
-            "millennialshub.app",
-            "selectstore.app"
-        ],
+        "training_text": "Business: new millennials-focused subscription boxes\nDomains: productsshop.io, dashco.org, primecommerce.dev, findretail.app, getretail.dev",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.5
         }
     },
     {
         "business_description": "established online auto detailing platform",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "onlineapp.co",
             "syncly.io",
             "onlinedrive.org",
@@ -102,17 +84,14 @@
             "partsmotor.co"
         ],
         "industry": "automotive",
-        "predicted_domains": [
-            "autoauto.app",
-            "autowheel.me"
-        ],
+        "training_text": "Business: established online auto detailing platform\nDomains: onlineapp.co, syncly.io, onlinedrive.org, speedcar.com, partsmotor.co",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.54
         }
     },
     {
         "business_description": "Online mortgage brokerage platform",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "onlinepro.co",
             "fluxmax.com",
             "luxuryresidence.tech",
@@ -120,18 +99,14 @@
             "syncio.ai"
         ],
         "industry": "real_estate",
-        "predicted_domains": [
-            "onlineliving.com",
-            "onlinereal.com",
-            "onlinehub.app"
-        ],
+        "training_text": "Business: Online mortgage brokerage platform\nDomains: onlinepro.co, fluxmax.com, luxuryresidence.tech, mortgageapp.ai, syncio.ai",
         "evaluation_results": {
-            "overall_score": 0.5666666666666667
+            "overall_score": 0.5599999999999999
         }
     },
     {
         "business_description": "parts specializing in auto repair",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "autoapp.dev",
             "proauto.com",
             "proautomotive.co",
@@ -139,17 +114,14 @@
             "sparkai.ly"
         ],
         "industry": "automotive",
-        "predicted_domains": [
-            "autoauto.me",
-            "partspro.me"
-        ],
+        "training_text": "Business: parts specializing in auto repair\nDomains: autoapp.dev, proauto.com, proautomotive.co, novaco.ly, sparkai.ly",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.5349999999999999
         }
     },
     {
         "business_description": "Local tours offering luxury travel",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "offeringtravel.app",
             "synclab.co",
             "localco.org",
@@ -157,18 +129,14 @@
             "localtours.io"
         ],
         "industry": "travel",
-        "predicted_domains": [
-            "localio.org",
-            "localhub.org",
-            "tourstravel.org"
-        ],
+        "training_text": "Business: Local tours offering luxury travel\nDomains: offeringtravel.app, synclab.co, localco.org, toursapp.tech, localtours.io",
         "evaluation_results": {
-            "overall_score": 0.635
+            "overall_score": 0.53
         }
     },
     {
         "business_description": "Premium process improvement provider",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "dashlab.tech",
             "improvementco.ly",
             "processio.com",
@@ -176,17 +144,14 @@
             "apptek.com"
         ],
         "industry": "consulting",
-        "predicted_domains": [
-            "premiumio.ai",
-            "processio.ai"
-        ],
+        "training_text": "Business: Premium process improvement provider\nDomains: dashlab.tech, improvementco.ly, processio.com, processapp.me, apptek.com",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.5900000000000001
         }
     },
     {
         "business_description": "premium professional tutoring services company",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "quicktraining.dev",
             "courseskills.co",
             "apppro.app",
@@ -194,17 +159,14 @@
             "educationmaster.org"
         ],
         "industry": "education",
-        "predicted_domains": [
-            "tutoringskills.tech",
-            "premiumio.tech"
-        ],
+        "training_text": "Business: premium professional tutoring services company\nDomains: quicktraining.dev, courseskills.co, apppro.app, tutoringmaster.app, educationmaster.org",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.5700000000000001
         }
     },
     {
         "business_description": "Modern personal finance management solutions",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "apptek.io",
             "personalwealth.co",
             "financepro.ly",
@@ -212,18 +174,14 @@
             "tradingmoney.ly"
         ],
         "industry": "fintech",
-        "predicted_domains": [
-            "modernpay.app",
-            "personalapp.app",
-            "personalmoney.app"
-        ],
+        "training_text": "Business: Modern personal finance management solutions\nDomains: apptek.io, personalwealth.co, financepro.ly, dashlab.com, tradingmoney.ly",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.5700000000000001
         }
     },
     {
         "business_description": "certified renovation",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "housecare.me",
             "appio.com",
             "renovationapp.co",
@@ -231,18 +189,14 @@
             "sparkio.tech"
         ],
         "industry": "home_services",
-        "predicted_domains": [
-            "renovationpro.com",
-            "certifiedpro.me",
-            "certifiedpro.com"
-        ],
+        "training_text": "Business: certified renovation\nDomains: housecare.me, appio.com, renovationapp.co, zetahub.com, sparkio.tech",
         "evaluation_results": {
-            "overall_score": 0.6166666666666666
+            "overall_score": 0.495
         }
     },
     {
         "business_description": "new affordable flight reservations option",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "reservationsco.tech",
             "flightexplore.com",
             "zetalab.me",
@@ -250,17 +204,14 @@
             "tourstrips.com"
         ],
         "industry": "travel",
-        "predicted_domains": [
-            "flighthub.app",
-            "flightpro.app"
-        ],
+        "training_text": "Business: new affordable flight reservations option\nDomains: reservationsco.tech, flightexplore.com, zetalab.me, flightadventure.tech, tourstrips.com",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.5900000000000001
         }
     },
     {
         "business_description": "Boutique hair serving special occasion clients",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "applab.io",
             "servingco.org",
             "fluxpro.app",
@@ -268,17 +219,14 @@
             "nailsglamour.org"
         ],
         "industry": "beauty",
-        "predicted_domains": [
-            "boutiqueglamour.com",
-            "hairglamour.com"
-        ],
+        "training_text": "Business: Boutique hair serving special occasion clients\nDomains: applab.io, servingco.org, fluxpro.app, fluxhub.ly, nailsglamour.org",
         "evaluation_results": {
-            "overall_score": 0.675
+            "overall_score": 0.49000000000000005
         }
     },
     {
         "business_description": "Premium painting services provider",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "servicesio.org",
             "sparkify.dev",
             "premiumservices.io",
@@ -286,18 +234,14 @@
             "axisify.io"
         ],
         "industry": "home_services",
-        "predicted_domains": [
-            "paintingpro.io",
-            "paintingpro.ai",
-            "premiumpro.io"
-        ],
+        "training_text": "Business: Premium painting services provider\nDomains: servicesio.org, sparkify.dev, premiumservices.io, housepro.org, axisify.io",
         "evaluation_results": {
             "overall_score": 0.55
         }
     },
     {
         "business_description": "family-owned online certification programs platform",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "familyhub.me",
             "familyschool.app",
             "onlineio.ai",
@@ -305,17 +249,14 @@
             "axispro.dev"
         ],
         "industry": "education",
-        "predicted_domains": [
-            "ownedskills.com",
-            "ownedskills.app"
-        ],
+        "training_text": "Business: family-owned online certification programs platform\nDomains: familyhub.me, familyschool.app, onlineio.ai, familytraining.co, axispro.dev",
         "evaluation_results": {
-            "overall_score": 0.625
+            "overall_score": 0.51
         }
     },
     {
         "business_description": "established affordable compliance consulting option",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "dashai.io",
             "compliancepro.co",
             "zoomai.app",
@@ -323,17 +264,14 @@
             "axispro.io"
         ],
         "industry": "consulting",
-        "predicted_domains": [
-            "affordableio.ai",
-            "apexexpertise.app"
-        ],
+        "training_text": "Business: established affordable compliance consulting option\nDomains: dashai.io, compliancepro.co, zoomai.app, expertstrategy.io, axispro.io",
         "evaluation_results": {
-            "overall_score": 0.525
+            "overall_score": 0.515
         }
     },
     {
         "business_description": "premium high-end health experience",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "premiumpro.dev",
             "therapyclinic.ly",
             "highclinic.com",
@@ -341,18 +279,14 @@
             "novaly.org"
         ],
         "industry": "healthcare",
-        "predicted_domains": [
-            "highvital.org",
-            "highvital.com",
-            "premiumvital.com"
-        ],
+        "training_text": "Business: premium high-end health experience\nDomains: premiumpro.dev, therapyclinic.ly, highclinic.com, fitnesstherapy.io, novaly.org",
         "evaluation_results": {
-            "overall_score": 0.65
+            "overall_score": 0.5599999999999999
         }
     },
     {
         "business_description": "Local system offering project management",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "offeringco.tech",
             "appco.ly",
             "systemsync.co",
@@ -360,19 +294,14 @@
             "platformapp.tech"
         ],
         "industry": "saas",
-        "predicted_domains": [
-            "localhub.ly",
-            "offeringapp.ly",
-            "localhub.app",
-            "localpro.ly"
-        ],
+        "training_text": "Business: Local system offering project management\nDomains: offeringco.tech, appco.ly, systemsync.co, offeringpro.co, platformapp.tech",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.485
         }
     },
     {
         "business_description": "new boutique workout",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "boutiqueio.org",
             "puregym.co",
             "boutiquemuscle.tech",
@@ -380,19 +309,14 @@
             "sparkio.tech"
         ],
         "industry": "fitness",
-        "predicted_domains": [
-            "workoutbody.me",
-            "boutiqueapp.app",
-            "workoutstrong.me",
-            "workoutpro.ly"
-        ],
+        "training_text": "Business: new boutique workout\nDomains: boutiqueio.org, puregym.co, boutiquemuscle.tech, gymtraining.ai, sparkio.tech",
         "evaluation_results": {
-            "overall_score": 0.525
+            "overall_score": 0.5599999999999999
         }
     },
     {
         "business_description": "High-end boarding experience",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "highco.ai",
             "trustedgrooming.io",
             "wellnesspets.app",
@@ -400,19 +324,14 @@
             "animalpaws.co"
         ],
         "industry": "pet_services",
-        "predicted_domains": [
-            "boardingpro.ai",
-            "hightail.me",
-            "hightail.org",
-            "hightail.ai"
-        ],
+        "training_text": "Business: High-end boarding experience\nDomains: highco.ai, trustedgrooming.io, wellnesspets.app, axistek.ai, animalpaws.co",
         "evaluation_results": {
-            "overall_score": 0.6
+            "overall_score": 0.51
         }
     },
     {
         "business_description": "Affordable recipe sharing option",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "cuisinechef.tech",
             "recipeapp.ly",
             "recipepro.ai",
@@ -420,17 +339,14 @@
             "restauranteats.me"
         ],
         "industry": "food",
-        "predicted_domains": [
-            "recipehub.app",
-            "sharingbite.app"
-        ],
+        "training_text": "Business: Affordable recipe sharing option\nDomains: cuisinechef.tech, recipeapp.ly, recipepro.ai, affordablepro.io, restauranteats.me",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.55
         }
     },
     {
         "business_description": "premium billing management for enterprises",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "dashio.org",
             "premiumpro.tech",
             "managemently.org",
@@ -438,17 +354,14 @@
             "platformhub.org"
         ],
         "industry": "saas",
-        "predicted_domains": [
-            "billingpro.ly",
-            "premiumpro.ly"
-        ],
+        "training_text": "Business: premium billing management for enterprises\nDomains: dashio.org, premiumpro.tech, managemently.org, autosoftware.com, platformhub.org",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.5900000000000001
         }
     },
     {
         "business_description": "independent custom intellectual property for inventors",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "counsellaw.io",
             "adviceadvocate.io",
             "flowio.ly",
@@ -456,17 +369,14 @@
             "sparkhub.io"
         ],
         "industry": "legal",
-        "predicted_domains": [
-            "independentpro.com",
-            "custompro.ai"
-        ],
+        "training_text": "Business: independent custom intellectual property for inventors\nDomains: counsellaw.io, adviceadvocate.io, flowio.ly, legalattorney.ly, sparkhub.io",
         "evaluation_results": {
-            "overall_score": 0.6
+            "overall_score": 0.51
         }
     },
     {
         "business_description": "Custom data analytics for startups",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "dashco.ai",
             "customhub.dev",
             "datasync.co",
@@ -474,17 +384,14 @@
             "flowsoftware.com"
         ],
         "industry": "saas",
-        "predicted_domains": [
-            "customapp.app",
-            "customhub.app"
-        ],
+        "training_text": "Business: Custom data analytics for startups\nDomains: dashco.ai, customhub.dev, datasync.co, streamsoftware.ly, flowsoftware.com",
         "evaluation_results": {
-            "overall_score": 0.525
+            "overall_score": 0.5800000000000001
         }
     },
     {
         "business_description": "Local litigation offering contract law",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "dashio.me",
             "legalfirm.dev",
             "attorneylaw.dev",
@@ -492,18 +399,14 @@
             "expertlegal.ly"
         ],
         "industry": "legal",
-        "predicted_domains": [
-            "localhub.co",
-            "localfirm.ai",
-            "offeringfirm.ai"
-        ],
+        "training_text": "Business: Local litigation offering contract law\nDomains: dashio.me, legalfirm.dev, attorneylaw.dev, litigationfirm.dev, expertlegal.ly",
         "evaluation_results": {
-            "overall_score": 0.515
+            "overall_score": 0.55
         }
     },
     {
         "business_description": "retirees-focused home staging",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "focusedhub.app",
             "focusedreal.org",
             "homehub.org",
@@ -511,19 +414,14 @@
             "eliteproperties.dev"
         ],
         "industry": "real_estate",
-        "predicted_domains": [
-            "retireeshub.com",
-            "focusedpro.ai",
-            "focusedreal.com",
-            "focusedpro.com"
-        ],
+        "training_text": "Business: retirees-focused home staging\nDomains: focusedhub.app, focusedreal.org, homehub.org, zoomify.com, eliteproperties.dev",
         "evaluation_results": {
-            "overall_score": 0.6
+            "overall_score": 0.55
         }
     },
     {
         "business_description": "Premium clothing retail provider",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "retailplaza.com",
             "shopmarket.org",
             "premiumdepot.org",
@@ -531,18 +429,14 @@
             "zoommax.ly"
         ],
         "industry": "retail",
-        "predicted_domains": [
-            "retailhub.app",
-            "clothingpro.io",
-            "retailpro.ai"
-        ],
+        "training_text": "Business: Premium clothing retail provider\nDomains: retailplaza.com, shopmarket.org, premiumdepot.org, premiumhub.tech, zoommax.ly",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.5700000000000001
         }
     },
     {
         "business_description": "Modern adventure tours solutions",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "venturetravel.ai",
             "modernio.io",
             "adventuretrips.org",
@@ -550,17 +444,14 @@
             "tripsadventure.com"
         ],
         "industry": "travel",
-        "predicted_domains": [
-            "tourstravel.app",
-            "moderngo.dev"
-        ],
+        "training_text": "Business: Modern adventure tours solutions\nDomains: venturetravel.ai, modernio.io, adventuretrips.org, adventuretravel.org, tripsadventure.com",
         "evaluation_results": {
-            "overall_score": 0.5
+            "overall_score": 0.62
         }
     },
     {
         "business_description": "Online lending solutions platform",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "zetatek.com",
             "lendinginvest.me",
             "solutionspro.app",
@@ -568,17 +459,14 @@
             "onlinecoin.ly"
         ],
         "industry": "fintech",
-        "predicted_domains": [
-            "onlineco.app",
-            "onlinepro.app"
-        ],
+        "training_text": "Business: Online lending solutions platform\nDomains: zetatek.com, lendinginvest.me, solutionspro.app, onlinepro.com, onlinecoin.ly",
         "evaluation_results": {
-            "overall_score": 0.525
+            "overall_score": 0.54
         }
     },
     {
         "business_description": "Affordable personal training option",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "personalhub.dev",
             "workoutflex.dev",
             "affordableco.ly",
@@ -586,27 +474,23 @@
             "personalco.org"
         ],
         "industry": "fitness",
-        "predicted_domains": [
-            "personalpro.app"
-        ],
+        "training_text": "Business: Affordable personal training option\nDomains: personalhub.dev, workoutflex.dev, affordableco.ly, apphub.com, personalco.org",
         "evaluation_results": {
-            "overall_score": 0.5349999999999999
+            "overall_score": 0.5900000000000001
         }
     },
     {
         "business_description": "High-end content experience",
-        "ground_truth_domains": [],
+        "domain_suggestions": [],
         "industry": "adult_entertainment",
-        "predicted_domains": [
-            ""
-        ],
+        "training_text": "Business: High-end content experience\nDomains: ",
         "evaluation_results": {
-            "overall_score": 0.4
+            "overall_score": 0.865
         }
     },
     {
         "business_description": "dropshipping with reliable service",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "serviceio.app",
             "axisco.me",
             "salesshop.io",
@@ -614,19 +498,14 @@
             "dropshippingio.tech"
         ],
         "industry": "ecommerce",
-        "predicted_domains": [
-            "reliablehub.co",
-            "reliablehub.ly",
-            "reliablestore.com",
-            "reliablehub.app"
-        ],
+        "training_text": "Business: dropshipping with reliable service\nDomains: serviceio.app, axisco.me, salesshop.io, zetapro.app, dropshippingio.tech",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.52
         }
     },
     {
         "business_description": "premium online maintenance services platform",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "onlineauto.tech",
             "onlineco.me",
             "sparkio.dev",
@@ -634,17 +513,14 @@
             "novalab.org"
         ],
         "industry": "automotive",
-        "predicted_domains": [
-            "premiumvehicle.app",
-            "premiumio.app"
-        ],
+        "training_text": "Business: premium online maintenance services platform\nDomains: onlineauto.tech, onlineco.me, sparkio.dev, partsservice.tech, novalab.org",
         "evaluation_results": {
-            "overall_score": 0.5
+            "overall_score": 0.5700000000000001
         }
     },
     {
         "business_description": "Premium property management provider",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "sparkhub.dev",
             "primerealty.io",
             "premiumapp.tech",
@@ -652,18 +528,14 @@
             "managementhub.ai"
         ],
         "industry": "real_estate",
-        "predicted_domains": [
-            "premiumreal.app",
-            "premiumreal.com",
-            "premiumhub.app"
-        ],
+        "training_text": "Business: Premium property management provider\nDomains: sparkhub.dev, primerealty.io, premiumapp.tech, premiumpro.ly, managementhub.ai",
         "evaluation_results": {
-            "overall_score": 0.5833333333333334
+            "overall_score": 0.515
         }
     },
     {
         "business_description": "Professional compliance consulting company",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "expertadvisory.me",
             "sparkify.io",
             "compliancehub.app",
@@ -671,17 +543,14 @@
             "consultingio.app"
         ],
         "industry": "consulting",
-        "predicted_domains": [
-            "apexexpertise.app",
-            "consultingco.app"
-        ],
+        "training_text": "Business: Professional compliance consulting company\nDomains: expertadvisory.me, sparkify.io, compliancehub.app, eliteguidance.ly, consultingio.app",
         "evaluation_results": {
             "overall_score": 0.55
         }
     },
     {
         "business_description": "rescue animals-focused emergency care",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "dashlab.tech",
             "healthypet.com",
             "axislab.me",
@@ -689,18 +558,14 @@
             "animalsapp.ai"
         ],
         "industry": "pet_services",
-        "predicted_domains": [
-            "rescueanimal.app",
-            "rescueanimal.me",
-            "rescuehub.app"
-        ],
+        "training_text": "Business: rescue animals-focused emergency care\nDomains: dashlab.tech, healthypet.com, axislab.me, synchub.ly, animalsapp.ai",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.47000000000000003
         }
     },
     {
         "business_description": "gallery specializing in home goods",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "galleryoutlet.ai",
             "storegallery.ai",
             "appai.com",
@@ -708,18 +573,14 @@
             "depotdepot.tech"
         ],
         "industry": "retail",
-        "predicted_domains": [
-            "galleryhub.app",
-            "specializingpro.ly",
-            "galleryhub.io"
-        ],
+        "training_text": "Business: gallery specializing in home goods\nDomains: galleryoutlet.ai, storegallery.ai, appai.com, homeco.app, depotdepot.tech",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.5
         }
     },
     {
         "business_description": "independent high-end care experience",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "apply.ly",
             "carevital.co",
             "appio.org",
@@ -727,18 +588,14 @@
             "independentco.dev"
         ],
         "industry": "healthcare",
-        "predicted_domains": [
-            "independentpro.org",
-            "independenthub.com",
-            "highmedical.org"
-        ],
+        "training_text": "Business: independent high-end care experience\nDomains: apply.ly, carevital.co, appio.org, hightherapy.com, independentco.dev",
         "evaluation_results": {
-            "overall_score": 0.6
+            "overall_score": 0.5
         }
     },
     {
         "business_description": "Modern budget travel solutions",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "traveljourney.tech",
             "budgetapp.co",
             "modernpro.ai",
@@ -746,18 +603,14 @@
             "travelvacation.com"
         ],
         "industry": "travel",
-        "predicted_domains": [
-            "moderngo.app",
-            "modernhub.app",
-            "travelpro.app"
-        ],
+        "training_text": "Business: Modern budget travel solutions\nDomains: traveljourney.tech, budgetapp.co, modernpro.ai, travelco.com, travelvacation.com",
         "evaluation_results": {
             "overall_score": 0.55
         }
     },
     {
         "business_description": "established gamers-focused pet supplies",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "gamersgallery.com",
             "establishedio.com",
             "establishedpro.co",
@@ -765,17 +618,14 @@
             "gamersio.ai"
         ],
         "industry": "retail",
-        "predicted_domains": [
-            "gamersapp.app",
-            "establishedco.app"
-        ],
+        "training_text": "Business: established gamers-focused pet supplies\nDomains: gamersgallery.com, establishedio.com, establishedpro.co, focusedshop.app, gamersio.ai",
         "evaluation_results": {
-            "overall_score": 0.475
+            "overall_score": 0.54
         }
     },
     {
         "business_description": "Modern financial planning solutions",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "moderncoin.ai",
             "flowtek.tech",
             "bankingpay.tech",
@@ -783,17 +633,14 @@
             "digitallending.com"
         ],
         "industry": "fintech",
-        "predicted_domains": [
-            "planningco.app",
-            "financialcoin.app"
-        ],
+        "training_text": "Business: Modern financial planning solutions\nDomains: moderncoin.ai, flowtek.tech, bankingpay.tech, paymentbank.ly, digitallending.com",
         "evaluation_results": {
             "overall_score": 0.55
         }
     },
     {
         "business_description": "Premium nutrition consulting provider",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "dailycatering.io",
             "sparkly.ai",
             "nutritionbite.co",
@@ -801,30 +648,23 @@
             "cheffood.org"
         ],
         "industry": "food",
-        "predicted_domains": [
-            "nutritionco.me",
-            "consultingco.com",
-            "nutritionco.com",
-            "nutritionpro.me"
-        ],
+        "training_text": "Business: Premium nutrition consulting provider\nDomains: dailycatering.io, sparkly.ai, nutritionbite.co, localcooking.ly, cheffood.org",
         "evaluation_results": {
-            "overall_score": 0.625
+            "overall_score": 0.5
         }
     },
     {
         "business_description": "Local private offering adult content creation",
-        "ground_truth_domains": [],
+        "domain_suggestions": [],
         "industry": "adult_entertainment",
-        "predicted_domains": [
-            ""
-        ],
+        "training_text": "Business: Local private offering adult content creation\nDomains: ",
         "evaluation_results": {
-            "overall_score": 0.4
+            "overall_score": 0.85
         }
     },
     {
         "business_description": "Premium jewelry shop provider",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "megaboutique.io",
             "premiumpro.app",
             "shopmarket.io",
@@ -832,17 +672,14 @@
             "buyoutlet.ly"
         ],
         "industry": "retail",
-        "predicted_domains": [
-            "shopgallery.app",
-            "jewelryhub.app"
-        ],
+        "training_text": "Business: Premium jewelry shop provider\nDomains: megaboutique.io, premiumpro.app, shopmarket.io, zoomio.ai, buyoutlet.ly",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.5
         }
     },
     {
         "business_description": "premium commercial photography for families",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "premiumapp.me",
             "camerastudio.co",
             "appify.org",
@@ -850,17 +687,14 @@
             "memorablephotos.com"
         ],
         "industry": "photography",
-        "predicted_domains": [
-            "creativestudio.com",
-            "premiumhub.ly"
-        ],
+        "training_text": "Business: premium commercial photography for families\nDomains: premiumapp.me, camerastudio.co, appify.org, photographyhub.ai, memorablephotos.com",
         "evaluation_results": {
             "overall_score": 0.55
         }
     },
     {
         "business_description": "local handcrafted tutoring",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "appio.ly",
             "tutoringpro.com",
             "localapp.me",
@@ -868,17 +702,14 @@
             "masterlearning.com"
         ],
         "industry": "education",
-        "predicted_domains": [
-            "handcraftedio.app",
-            "localio.app"
-        ],
+        "training_text": "Business: local handcrafted tutoring\nDomains: appio.ly, tutoringpro.com, localapp.me, zoomco.me, masterlearning.com",
         "evaluation_results": {
-            "overall_score": 0.525
+            "overall_score": 0.51
         }
     },
     {
         "business_description": "established luxury homes",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "propertieshomes.me",
             "establishedco.org",
             "estatesrealty.io",
@@ -886,17 +717,14 @@
             "estatesland.org"
         ],
         "industry": "real_estate",
-        "predicted_domains": [
-            "luxuryliving.app",
-            "luxuryreal.com"
-        ],
+        "training_text": "Business: established luxury homes\nDomains: propertieshomes.me, establishedco.org, estatesrealty.io, luxuryhouse.app, estatesland.org",
         "evaluation_results": {
-            "overall_score": 0.625
+            "overall_score": 0.55
         }
     },
     {
         "business_description": "independent yoga instruction with stay motivated",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "independentpro.ai",
             "purewellness.io",
             "vitalworkout.com",
@@ -904,18 +732,14 @@
             "corewellness.io"
         ],
         "industry": "fitness",
-        "predicted_domains": [
-            "independentfitness.app",
-            "powerfitness.app",
-            "yogamuscle.com"
-        ],
+        "training_text": "Business: independent yoga instruction with stay motivated\nDomains: independentpro.ai, purewellness.io, vitalworkout.com, activemuscle.app, corewellness.io",
         "evaluation_results": {
-            "overall_score": 0.5183333333333333
+            "overall_score": 0.555
         }
     },
     {
         "business_description": "Premium landscape photography provider",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "cameracapture.org",
             "flowpro.tech",
             "photographyio.ly",
@@ -923,18 +747,14 @@
             "zetaify.ly"
         ],
         "industry": "photography",
-        "predicted_domains": [
-            "landscapehub.com",
-            "landscapepro.app",
-            "landscapepro.io"
-        ],
+        "training_text": "Business: Premium landscape photography provider\nDomains: cameracapture.org, flowpro.tech, photographyio.ly, landscapefocus.org, zetaify.ly",
         "evaluation_results": {
-            "overall_score": 0.5833333333333334
+            "overall_score": 0.54
         }
     },
     {
         "business_description": "marketplace platform in business district",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "businessget.tech",
             "platformpro.co",
             "platformhub.co",
@@ -942,18 +762,14 @@
             "marketplacehub.io"
         ],
         "industry": "ecommerce",
-        "predicted_domains": [
-            "marketplacehub.app",
-            "marketplaceapp.app",
-            "businesshub.app"
-        ],
+        "training_text": "Business: marketplace platform in business district\nDomains: businessget.tech, platformpro.co, platformhub.co, axislab.dev, marketplacehub.io",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.5599999999999999
         }
     },
     {
         "business_description": "independent advice specializing in family law",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "independenthub.dev",
             "axishub.me",
             "specializingpro.ai",
@@ -961,17 +777,14 @@
             "counselattorney.co"
         ],
         "industry": "legal",
-        "predicted_domains": [
-            "advicehub.co",
-            "adviceadvice.ai"
-        ],
+        "training_text": "Business: independent advice specializing in family law\nDomains: independenthub.dev, axishub.me, specializingpro.ai, advicepro.co, counselattorney.co",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.5
         }
     },
     {
         "business_description": "Professional event photography company",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "photographyco.me",
             "zetaco.dev",
             "synchub.app",
@@ -979,18 +792,14 @@
             "perfectstudio.com"
         ],
         "industry": "photography",
-        "predicted_domains": [
-            "eventhub.com",
-            "eventhub.ly",
-            "eventhub.app"
-        ],
+        "training_text": "Business: Professional event photography company\nDomains: photographyco.me, zetaco.dev, synchub.app, eventstudio.co, perfectstudio.com",
         "evaluation_results": {
-            "overall_score": 0.5833333333333334
+            "overall_score": 0.5599999999999999
         }
     },
     {
         "business_description": "Affordable sports training option",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "wellnessfit.org",
             "sportsstrong.io",
             "trainingpower.ly",
@@ -998,16 +807,14 @@
             "trainingio.co"
         ],
         "industry": "fitness",
-        "predicted_domains": [
-            "sportshealth.app"
-        ],
+        "training_text": "Business: Affordable sports training option\nDomains: wellnessfit.org, sportsstrong.io, trainingpower.ly, sparkio.me, trainingio.co",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.54
         }
     },
     {
         "business_description": "craft brewing in historic district",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "zoomai.ai",
             "craftapp.org",
             "yummybar.dev",
@@ -1015,19 +822,14 @@
             "brewingtaste.ly"
         ],
         "industry": "food_beverage",
-        "predicted_domains": [
-            "brewingio.app",
-            "savorydiner.app",
-            "savorydiner.io",
-            "historicdine.app"
-        ],
+        "training_text": "Business: craft brewing in historic district\nDomains: zoomai.ai, craftapp.org, yummybar.dev, cafecafe.dev, brewingtaste.ly",
         "evaluation_results": {
-            "overall_score": 0.45
+            "overall_score": 0.47000000000000003
         }
     },
     {
         "business_description": "Premium hair styling provider",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "radiantsalon.me",
             "premiumglamour.tech",
             "cosmeticsspa.me",
@@ -1035,17 +837,14 @@
             "glowbeauty.ai"
         ],
         "industry": "beauty",
-        "predicted_domains": [
-            "stylingglow.com",
-            "hairglamour.com"
-        ],
+        "training_text": "Business: Premium hair styling provider\nDomains: radiantsalon.me, premiumglamour.tech, cosmeticsspa.me, flowify.io, glowbeauty.ai",
         "evaluation_results": {
-            "overall_score": 0.7
+            "overall_score": 0.5599999999999999
         }
     },
     {
         "business_description": "health monitoring for busy professionals",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "fluxify.ly",
             "strongwellness.io",
             "busyvital.me",
@@ -1053,18 +852,14 @@
             "dashlab.io"
         ],
         "industry": "healthcare",
-        "predicted_domains": [
-            "busypro.com",
-            "busypro.org",
-            "healthmedical.com"
-        ],
+        "training_text": "Business: health monitoring for busy professionals\nDomains: fluxify.ly, strongwellness.io, busyvital.me, healthio.dev, dashlab.io",
         "evaluation_results": {
-            "overall_score": 0.6
+            "overall_score": 0.5599999999999999
         }
     },
     {
         "business_description": "affordable roofing repair option",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "repairhome.io",
             "handymancare.app",
             "trustedrepair.me",
@@ -1072,17 +867,14 @@
             "affordablehouse.tech"
         ],
         "industry": "home_services",
-        "predicted_domains": [
-            "roofingpro.me",
-            "affordablepro.me"
-        ],
+        "training_text": "Business: affordable roofing repair option\nDomains: repairhome.io, handymancare.app, trustedrepair.me, repairpro.io, affordablehouse.tech",
         "evaluation_results": {
-            "overall_score": 0.525
+            "overall_score": 0.52
         }
     },
     {
         "business_description": "family-owned professional newborn photography company",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "flowify.ly",
             "ownedio.io",
             "familyportraits.com",
@@ -1090,19 +882,14 @@
             "familypro.org"
         ],
         "industry": "photography",
-        "predicted_domains": [
-            "creativestudio.com",
-            "familyapp.ly",
-            "familyapp.app",
-            "familyhub.ly"
-        ],
+        "training_text": "Business: family-owned professional newborn photography company\nDomains: flowify.ly, ownedio.io, familyportraits.com, imagescapture.app, familypro.org",
         "evaluation_results": {
-            "overall_score": 0.525
+            "overall_score": 0.54
         }
     },
     {
         "business_description": "established boutique construction serving vacation homes",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "flowtek.ai",
             "housepro.app",
             "premierhouse.ly",
@@ -1110,18 +897,14 @@
             "axistek.me"
         ],
         "industry": "home_services",
-        "predicted_domains": [
-            "boutiquepro.ai",
-            "establishedpro.ly",
-            "boutiquepro.ly"
-        ],
+        "training_text": "Business: established boutique construction serving vacation homes\nDomains: flowtek.ai, housepro.app, premierhouse.ly, establishedhome.org, axistek.me",
         "evaluation_results": {
-            "overall_score": 0.515
+            "overall_score": 0.52
         }
     },
     {
         "business_description": "Modern spa services solutions",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "modernpro.com",
             "solutionsbeauty.me",
             "salonspa.app",
@@ -1129,19 +912,14 @@
             "servicesshine.ly"
         ],
         "industry": "beauty",
-        "predicted_domains": [
-            "modernspa.io",
-            "modernsalon.ai",
-            "serviceshub.app",
-            "modernspa.app"
-        ],
+        "training_text": "Business: Modern spa services solutions\nDomains: modernpro.com, solutionsbeauty.me, salonspa.app, solutionsio.dev, servicesshine.ly",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.53
         }
     },
     {
         "business_description": "established luxury auto",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "luxuryservice.app",
             "axisly.tech",
             "autoapp.app",
@@ -1149,19 +927,14 @@
             "autoco.dev"
         ],
         "industry": "automotive",
-        "predicted_domains": [
-            "luxuryauto.app",
-            "luxurypro.io",
-            "establishedpro.io",
-            "luxuryauto.io"
-        ],
+        "training_text": "Business: established luxury auto\nDomains: luxuryservice.app, axisly.tech, autoapp.app, sparkpro.tech, autoco.dev",
         "evaluation_results": {
-            "overall_score": 0.5625
+            "overall_score": 0.51
         }
     },
     {
         "business_description": "independent custom therapy",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "syncly.tech",
             "therapyhub.dev",
             "therapyfit.tech",
@@ -1169,17 +942,14 @@
             "independentcare.ly"
         ],
         "industry": "healthcare",
-        "predicted_domains": [
-            "independentpro.org",
-            "customhub.org"
-        ],
+        "training_text": "Business: independent custom therapy\nDomains: syncly.tech, therapyhub.dev, therapyfit.tech, therapyvital.org, independentcare.ly",
         "evaluation_results": {
-            "overall_score": 0.625
+            "overall_score": 0.5599999999999999
         }
     },
     {
         "business_description": "Professional home security company",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "professionalhub.tech",
             "homecare.app",
             "qualityhouse.com",
@@ -1187,18 +957,14 @@
             "zetaly.org"
         ],
         "industry": "home_services",
-        "predicted_domains": [
-            "homepro.com",
-            "homepro.me",
-            "homeservices.com"
-        ],
+        "training_text": "Business: Professional home security company\nDomains: professionalhub.tech, homecare.app, qualityhouse.com, homepro.dev, zetaly.org",
         "evaluation_results": {
-            "overall_score": 0.6166666666666666
+            "overall_score": 0.5549999999999999
         }
     },
     {
         "business_description": "Local brewery offering ice cream shop",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "offeringdine.com",
             "sparkai.co",
             "localflavor.me",
@@ -1206,17 +972,14 @@
             "offeringcafe.io"
         ],
         "industry": "food_beverage",
-        "predicted_domains": [
-            "savorydiner.app",
-            "localio.app"
-        ],
+        "training_text": "Business: Local brewery offering ice cream shop\nDomains: offeringdine.com, sparkai.co, localflavor.me, localfood.app, offeringcafe.io",
         "evaluation_results": {
-            "overall_score": 0.45
+            "overall_score": 0.52
         }
     },
     {
         "business_description": "premium new parents-focused family portraits",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "parentshub.tech",
             "artisticvision.dev",
             "memorablestudio.ly",
@@ -1224,17 +987,14 @@
             "perfectphotos.app"
         ],
         "industry": "photography",
-        "predicted_domains": [
-            "portraitslens.app",
-            "premiumpro.ly"
-        ],
+        "training_text": "Business: premium new parents-focused family portraits\nDomains: parentshub.tech, artisticvision.dev, memorablestudio.ly, premiumhub.com, perfectphotos.app",
         "evaluation_results": {
-            "overall_score": 0.485
+            "overall_score": 0.52
         }
     },
     {
         "business_description": "Custom workflow automation for consultants",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "solutionsync.me",
             "streamtool.me",
             "workflowhub.app",
@@ -1242,17 +1002,14 @@
             "hubsystem.org"
         ],
         "industry": "saas",
-        "predicted_domains": [
-            "customapp.app",
-            "customhub.app"
-        ],
+        "training_text": "Business: Custom workflow automation for consultants\nDomains: solutionsync.me, streamtool.me, workflowhub.app, workflowsync.co, hubsystem.org",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.5800000000000001
         }
     },
     {
         "business_description": "travel insurance in business district",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "venturejourney.io",
             "flowtek.app",
             "sparkco.dev",
@@ -1260,17 +1017,14 @@
             "businesshub.me"
         ],
         "industry": "travel",
-        "predicted_domains": [
-            "travelpro.app",
-            "businesshub.app"
-        ],
+        "training_text": "Business: travel insurance in business district\nDomains: venturejourney.io, flowtek.app, sparkco.dev, escapetours.me, businesshub.me",
         "evaluation_results": {
-            "overall_score": 0.525
+            "overall_score": 0.5
         }
     },
     {
         "business_description": "Affordable rental services option",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "topproperties.me",
             "rentalapp.ly",
             "estatesestates.me",
@@ -1278,16 +1032,14 @@
             "servicesreal.dev"
         ],
         "industry": "real_estate",
-        "predicted_domains": [
-            "rentalhub.app"
-        ],
+        "training_text": "Business: Affordable rental services option\nDomains: topproperties.me, rentalapp.ly, estatesestates.me, rentalapp.tech, servicesreal.dev",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.52
         }
     },
     {
         "business_description": "premium prevention specializing in telemedicine",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "fitwellness.ai",
             "preventionio.app",
             "preventionapp.dev",
@@ -1295,28 +1047,23 @@
             "balancecare.ai"
         ],
         "industry": "healthcare",
-        "predicted_domains": [
-            "telemedicineco.org",
-            "preventionco.org"
-        ],
+        "training_text": "Business: premium prevention specializing in telemedicine\nDomains: fitwellness.ai, preventionio.app, preventionapp.dev, novaio.tech, balancecare.ai",
         "evaluation_results": {
-            "overall_score": 0.65
+            "overall_score": 0.54
         }
     },
     {
         "business_description": "adult webcam services for adult entertainment consumers",
-        "ground_truth_domains": [],
+        "domain_suggestions": [],
         "industry": "adult_entertainment",
-        "predicted_domains": [
-            ""
-        ],
+        "training_text": "Business: adult webcam services for adult entertainment consumers\nDomains: ",
         "evaluation_results": {
-            "overall_score": 0.4
+            "overall_score": 0.835
         }
     },
     {
         "business_description": "Boutique training serving new pet owners",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "healthpets.ai",
             "appio.ai",
             "healthpaws.ly",
@@ -1324,29 +1071,23 @@
             "boutiqueco.me"
         ],
         "industry": "pet_services",
-        "predicted_domains": [
-            "boutiquepro.me",
-            "trainingtail.me",
-            "traininghub.me"
-        ],
+        "training_text": "Business: Boutique training serving new pet owners\nDomains: healthpets.ai, appio.ai, healthpaws.ly, boutiquefurry.co, boutiqueco.me",
         "evaluation_results": {
-            "overall_score": 0.5650000000000001
+            "overall_score": 0.485
         }
     },
     {
         "business_description": "adult video streaming with member benefits",
-        "ground_truth_domains": [],
+        "domain_suggestions": [],
         "industry": "adult_entertainment",
-        "predicted_domains": [
-            ""
-        ],
+        "training_text": "Business: adult video streaming with member benefits\nDomains: ",
         "evaluation_results": {
-            "overall_score": 0.4
+            "overall_score": 0.85
         }
     },
     {
         "business_description": "Affordable mortgage brokerage option",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "appify.com",
             "realtyhouse.app",
             "primeproperties.co",
@@ -1354,17 +1095,14 @@
             "zoompro.dev"
         ],
         "industry": "real_estate",
-        "predicted_domains": [
-            "mortgagepro.app",
-            "mortgagehub.app"
-        ],
+        "training_text": "Business: Affordable mortgage brokerage option\nDomains: appify.com, realtyhouse.app, primeproperties.co, elitehomes.co, zoompro.dev",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.5050000000000001
         }
     },
     {
         "business_description": "family-owned sustainable knowledge",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "zetapro.ai",
             "sustainablepro.com",
             "educationschool.org",
@@ -1372,16 +1110,14 @@
             "sustainableapp.app"
         ],
         "industry": "education",
-        "predicted_domains": [
-            "ownedapp.app"
-        ],
+        "training_text": "Business: family-owned sustainable knowledge\nDomains: zetapro.ai, sustainablepro.com, educationschool.org, zoommax.ly, sustainableapp.app",
         "evaluation_results": {
-            "overall_score": 0.45
+            "overall_score": 0.54
         }
     },
     {
         "business_description": "system specializing in team collaboration",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "integrationsync.com",
             "teamly.tech",
             "sparkai.ai",
@@ -1389,17 +1125,14 @@
             "teamio.ly"
         ],
         "industry": "saas",
-        "predicted_domains": [
-            "specializinghub.ly",
-            "teamhub.ly"
-        ],
+        "training_text": "Business: system specializing in team collaboration\nDomains: integrationsync.com, teamly.tech, sparkai.ai, systemio.dev, teamio.ly",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.5700000000000001
         }
     },
     {
         "business_description": "Premium food blogging provider",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "premiumpro.io",
             "bloggingdish.tech",
             "bitecatering.ai",
@@ -1407,18 +1140,14 @@
             "bloggingcook.app"
         ],
         "industry": "food",
-        "predicted_domains": [
-            "foodco.com",
-            "foodcook.com",
-            "premiumco.com"
-        ],
+        "training_text": "Business: Premium food blogging provider\nDomains: premiumpro.io, bloggingdish.tech, bitecatering.ai, chefrestaurant.ly, bloggingcook.app",
         "evaluation_results": {
-            "overall_score": 0.6
+            "overall_score": 0.5599999999999999
         }
     },
     {
         "business_description": "family-owned online facial treatments platform",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "ownedhub.ly",
             "hairlook.ly",
             "apppro.com",
@@ -1426,16 +1155,14 @@
             "shineskincare.app"
         ],
         "industry": "beauty",
-        "predicted_domains": [
-            "ownedperfect.app"
-        ],
+        "training_text": "Business: family-owned online facial treatments platform\nDomains: ownedhub.ly, hairlook.ly, apppro.com, sparkhub.app, shineskincare.app",
         "evaluation_results": {
-            "overall_score": 0.5
+            "overall_score": 0.53
         }
     },
     {
         "business_description": "Affordable juice bar option",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "sparkmax.me",
             "bareats.tech",
             "dashlab.app",
@@ -1443,18 +1170,14 @@
             "optionpro.dev"
         ],
         "industry": "food_beverage",
-        "predicted_domains": [
-            "juicehub.app",
-            "savorydiner.app",
-            "optionpro.app"
-        ],
+        "training_text": "Business: Affordable juice bar option\nDomains: sparkmax.me, bareats.tech, dashlab.app, optionpro.com, optionpro.dev",
         "evaluation_results": {
-            "overall_score": 0.5
+            "overall_score": 0.51
         }
     },
     {
         "business_description": "knowledge specializing in online courses",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "wiseskill.io",
             "syncai.io",
             "axisco.co",
@@ -1462,18 +1185,14 @@
             "onlineco.tech"
         ],
         "industry": "education",
-        "predicted_domains": [
-            "specializingio.ai",
-            "knowledgeskills.ai",
-            "specializinghub.ai"
-        ],
+        "training_text": "Business: knowledge specializing in online courses\nDomains: wiseskill.io, syncai.io, axisco.co, fluxhub.io, onlineco.tech",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.54
         }
     },
     {
         "business_description": "family-owned weight loss programs with feel great",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "weightgym.io",
             "ownedio.io",
             "axisly.ai",
@@ -1481,17 +1200,14 @@
             "ownedco.io"
         ],
         "industry": "fitness",
-        "predicted_domains": [
-            "ownedgym.com",
-            "ownedgym.app"
-        ],
+        "training_text": "Business: family-owned weight loss programs with feel great\nDomains: weightgym.io, ownedio.io, axisly.ai, studiofit.com, ownedco.io",
         "evaluation_results": {
-            "overall_score": 0.525
+            "overall_score": 0.53
         }
     },
     {
         "business_description": "remote teams-focused marketing automation",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "remotesync.com",
             "teamsco.org",
             "remoteapp.dev",
@@ -1499,16 +1215,14 @@
             "easysoftware.com"
         ],
         "industry": "saas",
-        "predicted_domains": [
-            "teamsapp.app"
-        ],
+        "training_text": "Business: remote teams-focused marketing automation\nDomains: remotesync.com, teamsco.org, remoteapp.dev, streamsolution.ai, easysoftware.com",
         "evaluation_results": {
-            "overall_score": 0.5
+            "overall_score": 0.61
         }
     },
     {
         "business_description": "new modern restaurant management solutions",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "restaurantco.tech",
             "bitecooking.com",
             "restaurantfood.ly",
@@ -1516,17 +1230,14 @@
             "restaurantfood.io"
         ],
         "industry": "food",
-        "predicted_domains": [
-            "modernco.app",
-            "restaurantdish.io"
-        ],
+        "training_text": "Business: new modern restaurant management solutions\nDomains: restaurantco.tech, bitecooking.com, restaurantfood.ly, foodkitchen.dev, restaurantfood.io",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.5700000000000001
         }
     },
     {
         "business_description": "new high-end expertise experience",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "dashlab.ai",
             "highinsights.ly",
             "zetaly.app",
@@ -1534,16 +1245,14 @@
             "highsolutions.co"
         ],
         "industry": "consulting",
-        "predicted_domains": [
-            "experienceapp.app"
-        ],
+        "training_text": "Business: new high-end expertise experience\nDomains: dashlab.ai, highinsights.ly, zetaly.app, expertisehub.app, highsolutions.co",
         "evaluation_results": {
             "overall_score": 0.55
         }
     },
     {
         "business_description": "mobile grooming in industrial zone",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "industrialhub.org",
             "wellnessbark.org",
             "industrialpets.tech",
@@ -1551,17 +1260,14 @@
             "flowmax.app"
         ],
         "industry": "pet_services",
-        "predicted_domains": [
-            "industrialhub.app",
-            "mobileio.app"
-        ],
+        "training_text": "Business: mobile grooming in industrial zone\nDomains: industrialhub.org, wellnessbark.org, industrialpets.tech, zetamax.dev, flowmax.app",
         "evaluation_results": {
-            "overall_score": 0.5
+            "overall_score": 0.53
         }
     },
     {
         "business_description": "new representation specializing in divorce proceedings",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "zoomco.co",
             "lawattorney.tech",
             "divorcehub.ly",
@@ -1569,18 +1275,14 @@
             "specializingapp.app"
         ],
         "industry": "legal",
-        "predicted_domains": [
-            "counselattorney.ai",
-            "specializinghub.ai",
-            "divorcepro.ai"
-        ],
+        "training_text": "Business: new representation specializing in divorce proceedings\nDomains: zoomco.co, lawattorney.tech, divorcehub.ly, divorceattorney.ly, specializingapp.app",
         "evaluation_results": {
             "overall_score": 0.5
         }
     },
     {
         "business_description": "new inventors-focused immigration law",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "focusedio.dev",
             "zoomco.ai",
             "justicelegal.co",
@@ -1588,17 +1290,14 @@
             "lawadvocate.tech"
         ],
         "industry": "legal",
-        "predicted_domains": [
-            "focusedlaw.ai",
-            "inventorshub.ai"
-        ],
+        "training_text": "Business: new inventors-focused immigration law\nDomains: focusedio.dev, zoomco.ai, justicelegal.co, axispro.org, lawadvocate.tech",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.53
         }
     },
     {
         "business_description": "Premium cruise bookings provider",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "wandertravel.ai",
             "journeywander.me",
             "zoomai.com",
@@ -1606,17 +1305,14 @@
             "premiumgo.org"
         ],
         "industry": "travel",
-        "predicted_domains": [
-            "bookingswander.com",
-            "cruiseio.com"
-        ],
+        "training_text": "Business: Premium cruise bookings provider\nDomains: wandertravel.ai, journeywander.me, zoomai.com, bookingsgo.co, premiumgo.org",
         "evaluation_results": {
-            "overall_score": 0.675
+            "overall_score": 0.55
         }
     },
     {
         "business_description": "marketplace platform for millennials",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "marketplacehub.me",
             "fluxpro.com",
             "millennialshub.tech",
@@ -1624,17 +1320,14 @@
             "marketplacehub.ai"
         ],
         "industry": "ecommerce",
-        "predicted_domains": [
-            "millennialsapp.app",
-            "marketplacehub.app"
-        ],
+        "training_text": "Business: marketplace platform for millennials\nDomains: marketplacehub.me, fluxpro.com, millennialshub.tech, platformco.dev, marketplacehub.ai",
         "evaluation_results": {
-            "overall_score": 0.575
+            "overall_score": 0.5700000000000001
         }
     },
     {
         "business_description": "independent ice cream shop with friendly service",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "shopbar.ly",
             "independentio.com",
             "cafebar.tech",
@@ -1642,19 +1335,14 @@
             "grillgrill.tech"
         ],
         "industry": "food_beverage",
-        "predicted_domains": [
-            "savorydiner.io",
-            "savorydiner.app",
-            "independentio.com",
-            "independenthub.app"
-        ],
+        "training_text": "Business: independent ice cream shop with friendly service\nDomains: shopbar.ly, independentio.com, cafebar.tech, creamtaste.tech, grillgrill.tech",
         "evaluation_results": {
-            "overall_score": 0.5
+            "overall_score": 0.47000000000000003
         }
     },
     {
         "business_description": "Premium jewelry shop provider",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "directmarket.com",
             "shopco.tech",
             "syncco.tech",
@@ -1662,17 +1350,14 @@
             "premiumpro.co"
         ],
         "industry": "retail",
-        "predicted_domains": [
-            "shopgallery.app",
-            "jewelryhub.app"
-        ],
+        "training_text": "Business: Premium jewelry shop provider\nDomains: directmarket.com, shopco.tech, syncco.tech, sparkai.com, premiumpro.co",
         "evaluation_results": {
-            "overall_score": 0.55
+            "overall_score": 0.53
         }
     },
     {
         "business_description": "organic catalog",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "catalogget.app",
             "cataloghub.io",
             "organicbuy.io",
@@ -1680,16 +1365,14 @@
             "catalogpro.ai"
         ],
         "industry": "ecommerce",
-        "predicted_domains": [
-            "cataloghub.app"
-        ],
+        "training_text": "Business: organic catalog\nDomains: catalogget.app, cataloghub.io, organicbuy.io, organicco.app, catalogpro.ai",
         "evaluation_results": {
-            "overall_score": 0.5
+            "overall_score": 0.54
         }
     },
     {
         "business_description": "home goods with reliable products",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "reliablemart.org",
             "appco.co",
             "reliablestore.org",
@@ -1697,17 +1380,14 @@
             "homeco.com"
         ],
         "industry": "retail",
-        "predicted_domains": [
-            "homeco.com",
-            "homedepot.ly"
-        ],
+        "training_text": "Business: home goods with reliable products\nDomains: reliablemart.org, appco.co, reliablestore.org, zoomly.ai, homeco.com",
         "evaluation_results": {
-            "overall_score": 0.585
+            "overall_score": 0.54
         }
     },
     {
         "business_description": "High-end investment experience",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "insurancebank.app",
             "highhub.org",
             "goldbanking.dev",
@@ -1715,17 +1395,14 @@
             "syncpro.app"
         ],
         "industry": "fintech",
-        "predicted_domains": [
-            "experienceapp.app",
-            "highapp.app"
-        ],
+        "training_text": "Business: High-end investment experience\nDomains: insurancebank.app, highhub.org, goldbanking.dev, highpro.co, syncpro.app",
         "evaluation_results": {
-            "overall_score": 0.485
+            "overall_score": 0.53
         }
     },
     {
         "business_description": "personal training for beginners",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "axisly.ly",
             "personalhub.co",
             "gymflex.ai",
@@ -1733,17 +1410,14 @@
             "dashhub.app"
         ],
         "industry": "fitness",
-        "predicted_domains": [
-            "personalpro.ly",
-            "personalpro.me"
-        ],
+        "training_text": "Business: personal training for beginners\nDomains: axisly.ly, personalhub.co, gymflex.ai, apphub.tech, dashhub.app",
         "evaluation_results": {
-            "overall_score": 0.525
+            "overall_score": 0.485
         }
     },
     {
         "business_description": "independent pet sitting in downtown area",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "sittingio.dev",
             "flowhub.ly",
             "companionpets.app",
@@ -1751,18 +1425,14 @@
             "sittingio.com"
         ],
         "industry": "pet_services",
-        "predicted_domains": [
-            "sittinghub.me",
-            "independentio.com",
-            "zoomco.app"
-        ],
+        "training_text": "Business: independent pet sitting in downtown area\nDomains: sittingio.dev, flowhub.ly, companionpets.app, flowpro.co, sittingio.com",
         "evaluation_results": {
-            "overall_score": 0.5333333333333334
+            "overall_score": 0.5599999999999999
         }
     },
     {
         "business_description": "performance optimization for healthcare organizations",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "healthcareco.me",
             "fluxmax.org",
             "performanceco.tech",
@@ -1770,29 +1440,23 @@
             "zetaai.co"
         ],
         "industry": "consulting",
-        "predicted_domains": [
-            "performancehub.app",
-            "performanceapp.app",
-            "axisai.ai"
-        ],
+        "training_text": "Business: performance optimization for healthcare organizations\nDomains: healthcareco.me, fluxmax.org, performanceco.tech, apexconsulting.org, zetaai.co",
         "evaluation_results": {
-            "overall_score": 0.5
+            "overall_score": 0.55
         }
     },
     {
         "business_description": "Local members offering explicit media distribution",
-        "ground_truth_domains": [],
+        "domain_suggestions": [],
         "industry": "adult_entertainment",
-        "predicted_domains": [
-            ""
-        ],
+        "training_text": "Business: Local members offering explicit media distribution\nDomains: ",
         "evaluation_results": {
-            "overall_score": 0.365
+            "overall_score": 0.85
         }
     },
     {
         "business_description": "Modern food blogging solutions",
-        "ground_truth_domains": [
+        "domain_suggestions": [
             "zoomio.dev",
             "bloggingpro.ly",
             "bloggingchef.io",
@@ -1800,13 +1464,9 @@
             "foodtaste.com"
         ],
         "industry": "food",
-        "predicted_domains": [
-            "modernfood.me",
-            "modernco.com",
-            "foodcook.me"
-        ],
+        "training_text": "Business: Modern food blogging solutions\nDomains: zoomio.dev, bloggingpro.ly, bloggingchef.io, foodhub.me, foodtaste.com",
         "evaluation_results": {
-            "overall_score": 0.5683333333333334
+            "overall_score": 0.5800000000000001
         }
     }
 ]
