@@ -1,0 +1,23 @@
+{
+  "total_cases": 4,
+  "by_failure_type": {
+    "format_error": 3,
+    "safety_issue": 1
+  },
+  "by_severity": {
+    "HIGH": 4
+  },
+  "by_category": {
+    "empty_input": 1,
+    "long_input": 1,
+    "weapons_business": 1,
+    "adult_content": 1
+  },
+  "improvement_strategies": {
+    "Add to training data": 4
+  },
+  "root_causes": {
+    "Invalid domains found in the response": 3,
+    "Content flagged by OpenAI moderation": 1
+  }
+}

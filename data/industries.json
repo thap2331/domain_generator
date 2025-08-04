@@ -1,0 +1,154 @@
+{
+    "saas": {
+        "keywords": ["platform", "software", "solution", "system", "tool", "app", "dashboard", "analytics", "automation", "integration"],
+        "services": ["project management", "customer relationship management", "inventory tracking", "workflow automation", "data analytics", "team collaboration", "document management", "billing management", "marketing automation", "sales tracking"],
+        "targets": ["small businesses", "enterprises", "startups", "remote teams", "agencies", "consultants", "freelancers", "developers", "marketers", "sales teams"],
+        "benefits": ["increase productivity", "streamline operations", "reduce costs", "improve efficiency", "enhance collaboration", "automate workflows", "gain insights", "scale operations", "save time", "boost revenue"],
+        "domain_prefixes": ["smart", "pro", "quick", "easy", "auto", "sync", "flow", "hub", "dash", "stream"],
+        "domain_suffixes": ["ly", "io", "co", "app", "tech", "lab", "hub", "flow", "sync", "pro"]
+    },
+    "retail": {
+        "keywords": ["shop", "store", "boutique", "outlet", "market", "emporium", "gallery", "warehouse", "depot", "plaza"],
+        "services": ["clothing retail", "home goods", "electronics sales", "furniture store", "bookstore", "jewelry shop", "sporting goods", "toy store", "pet supplies", "automotive parts"],
+        "targets": ["families", "young adults", "professionals", "students", "collectors", "hobbyists", "pet owners", "car enthusiasts", "gamers", "outdoor enthusiasts"],
+        "benefits": ["affordable prices", "quality products", "unique selection", "expert advice", "fast service", "convenient location", "trendy items", "reliable products", "great deals", "customer satisfaction"],
+        "domain_prefixes": ["shop", "buy", "best", "top", "mega", "super", "prime", "elite", "express", "direct"],
+        "domain_suffixes": ["store", "shop", "mart", "hub", "outlet", "depot", "emporium", "gallery", "warehouse", "plaza"]
+    },
+    "real_estate": {
+        "keywords": ["realty", "properties", "homes", "estates", "developments", "investments", "rentals", "commercial", "residential", "luxury"],
+        "services": ["residential sales", "commercial leasing", "property management", "real estate investment", "home staging", "property development", "rental services", "mortgage brokerage", "appraisal services", "relocation services"],
+        "targets": ["home buyers", "investors", "renters", "commercial clients", "developers", "first-time buyers", "luxury clients", "families", "retirees", "young professionals"],
+        "benefits": ["find dream homes", "maximize investments", "secure financing", "streamline transactions", "expert guidance", "market insights", "profitable deals", "stress-free process", "competitive rates", "personalized service"],
+        "domain_prefixes": ["prime", "elite", "luxury", "dream", "perfect", "top", "best", "premier", "platinum", "golden"],
+        "domain_suffixes": ["realty", "homes", "properties", "estates", "land", "real", "house", "residence", "living", "space"]
+    },
+    "fitness": {
+        "keywords": ["gym", "fitness", "wellness", "training", "workout", "health", "studio", "sports", "active", "strength"],
+        "services": ["personal training", "group fitness classes", "yoga instruction", "nutrition coaching", "weight loss programs", "strength training", "cardio workouts", "rehabilitation services", "sports training", "wellness coaching"],
+        "targets": ["fitness enthusiasts", "beginners", "athletes", "busy professionals", "seniors", "women", "men", "teenagers", "weight loss seekers", "bodybuilders"],
+        "benefits": ["lose weight", "build muscle", "improve health", "increase energy", "boost confidence", "achieve goals", "stay motivated", "prevent injury", "enhance performance", "feel great"],
+        "domain_prefixes": ["fit", "strong", "power", "flex", "peak", "vital", "pure", "core", "iron", "muscle"],
+        "domain_suffixes": ["fit", "gym", "fitness", "strong", "power", "flex", "muscle", "body", "health", "training"]
+    },
+    "travel": {
+        "keywords": ["travel", "tours", "vacation", "adventure", "journey", "destinations", "experiences", "bookings", "trips", "exploration"],
+        "services": ["travel planning", "tour packages", "hotel bookings", "flight reservations", "adventure tours", "cruise bookings", "travel insurance", "group travel", "luxury travel", "budget travel"],
+        "targets": ["families", "couples", "solo travelers", "business travelers", "adventure seekers", "luxury travelers", "budget travelers", "seniors", "students", "backpackers"],
+        "benefits": ["unforgettable experiences", "hassle-free planning", "best prices", "expert guidance", "unique destinations", "comfortable accommodations", "cultural immersion", "adventure thrills", "relaxation", "memories"],
+        "domain_prefixes": ["explore", "discover", "adventure", "journey", "travel", "go", "escape", "wander", "roam", "venture"],
+        "domain_suffixes": ["travel", "tours", "trips", "journey", "adventure", "explore", "go", "escape", "wander", "destinations"]
+    },
+    "automotive": {
+        "keywords": ["auto", "car", "vehicle", "automotive", "motor", "drive", "garage", "service", "repair", "parts"],
+        "services": ["car sales", "auto repair", "maintenance services", "parts distribution", "car rental", "auto detailing", "tire services", "oil changes", "collision repair", "custom modifications"],
+        "targets": ["car owners", "drivers", "car enthusiasts", "fleet managers", "mechanics", "dealerships", "rental companies", "truckers", "motorcycle riders", "classic car collectors"],
+        "benefits": ["reliable transportation", "expert service", "fair prices", "quality parts", "fast repairs", "professional work", "warranty coverage", "convenient location", "honest advice", "satisfaction guarantee"],
+        "domain_prefixes": ["auto", "car", "drive", "motor", "speed", "turbo", "premium", "pro", "express", "quick"],
+        "domain_suffixes": ["auto", "car", "drive", "motor", "garage", "service", "repair", "parts", "wheel", "vehicle"]
+    },
+    "beauty": {
+        "keywords": ["beauty", "salon", "spa", "cosmetics", "skincare", "hair", "nails", "wellness", "aesthetics", "grooming"],
+        "services": ["hair styling", "nail services", "facial treatments", "massage therapy", "makeup application", "skincare treatments", "spa services", "beauty consulting", "cosmetic sales", "wellness treatments"],
+        "targets": ["women", "men", "brides", "professionals", "teenagers", "seniors", "beauty enthusiasts", "busy professionals", "special occasion clients", "wellness seekers"],
+        "benefits": ["look beautiful", "feel confident", "relax and unwind", "professional results", "personalized service", "latest trends", "quality products", "expert advice", "rejuvenation", "self-care"],
+        "domain_prefixes": ["beauty", "glow", "luxe", "pure", "divine", "elegant", "radiant", "perfect", "glamour", "shine"],
+        "domain_suffixes": ["beauty", "salon", "spa", "glow", "luxe", "style", "look", "shine", "glamour", "perfect"]
+    },
+    "legal": {
+        "keywords": ["law", "legal", "attorney", "lawyer", "counsel", "advocacy", "litigation", "representation", "advice", "consultation"],
+        "services": ["personal injury law", "family law", "criminal defense", "business law", "real estate law", "immigration law", "estate planning", "divorce proceedings", "contract law", "intellectual property"],
+        "targets": ["individuals", "families", "businesses", "startups", "immigrants", "accident victims", "divorcing couples", "entrepreneurs", "property owners", "inventors"],
+        "benefits": ["protect rights", "legal expertise", "favorable outcomes", "peace of mind", "professional representation", "strategic advice", "confidential service", "experienced counsel", "fair compensation", "legal compliance"],
+        "domain_prefixes": ["law", "legal", "justice", "advocate", "defend", "counsel", "expert", "professional", "trusted", "premier"],
+        "domain_suffixes": ["law", "legal", "attorney", "counsel", "advocate", "justice", "rights", "defense", "advice", "firm"]
+    },
+    "photography": {
+        "keywords": ["photography", "photos", "portraits", "studio", "camera", "images", "visual", "creative", "artistic", "professional"],
+        "services": ["wedding photography", "portrait sessions", "event photography", "commercial photography", "product photography", "real estate photography", "family portraits", "newborn photography", "fashion photography", "landscape photography"],
+        "targets": ["couples", "families", "businesses", "models", "real estate agents", "event planners", "new parents", "graduates", "professionals", "artists"],
+        "benefits": ["capture memories", "professional quality", "artistic vision", "lasting keepsakes", "creative expression", "beautiful images", "special moments", "expert editing", "personalized service", "timeless photos"],
+        "domain_prefixes": ["capture", "focus", "lens", "frame", "vision", "artistic", "creative", "perfect", "stunning", "memorable"],
+        "domain_suffixes": ["photos", "photography", "studio", "images", "portraits", "camera", "lens", "focus", "capture", "vision"]
+    },
+    "pet_services": {
+        "keywords": ["pet", "animal", "veterinary", "grooming", "boarding", "training", "care", "health", "wellness", "companion"],
+        "services": ["veterinary care", "pet grooming", "dog training", "pet boarding", "pet sitting", "animal hospital", "pet supplies", "mobile grooming", "behavioral training", "emergency care"],
+        "targets": ["pet owners", "dog owners", "cat owners", "busy professionals", "travelers", "new pet owners", "senior pets", "rescue animals", "show animals", "working dogs"],
+        "benefits": ["healthy pets", "professional care", "peace of mind", "convenient service", "expert advice", "loving care", "emergency support", "behavioral improvement", "grooming excellence", "trusted service"],
+        "domain_prefixes": ["pet", "paw", "furry", "happy", "healthy", "caring", "loving", "trusted", "professional", "premium"],
+        "domain_suffixes": ["pets", "paws", "care", "vet", "animal", "companion", "furry", "tail", "bark", "meow"]
+    },
+    "home_services": {
+        "keywords": ["home", "house", "maintenance", "repair", "improvement", "renovation", "construction", "handyman", "service", "contractor"],
+        "services": ["home cleaning", "plumbing services", "electrical work", "HVAC maintenance", "landscaping", "painting services", "roofing repair", "flooring installation", "home security", "pest control"],
+        "targets": ["homeowners", "renters", "property managers", "busy families", "elderly residents", "new homeowners", "landlords", "commercial properties", "vacation homes", "apartment complexes"],
+        "benefits": ["maintain property value", "save time", "professional results", "reliable service", "licensed professionals", "emergency response", "quality workmanship", "competitive pricing", "satisfaction guarantee", "peace of mind"],
+        "domain_prefixes": ["home", "house", "quick", "reliable", "trusted", "professional", "expert", "premier", "quality", "perfect"],
+        "domain_suffixes": ["home", "house", "services", "repair", "fix", "maintenance", "improvement", "solutions", "care", "pro"]
+    },
+    "adult_entertainment": {
+        "keywords": ["adult", "entertainment", "content", "media", "premium", "exclusive", "members", "private", "mature", "explicit"],
+        "services": ["adult content website", "premium adult entertainment", "adult video streaming", "explicit content platform", "adult membership site", "mature entertainment services", "adult content creation", "adult social platform", "explicit media distribution", "adult webcam services"],
+        "targets": ["adults", "mature audiences", "premium members", "subscribers", "adult entertainment consumers", "private members", "exclusive clientele", "adult content enthusiasts", "mature viewers", "paying customers"],
+        "benefits": ["exclusive content", "premium experience", "private access", "high-quality content", "secure platform", "discreet service", "member benefits", "unlimited access", "regular updates", "customer satisfaction"],
+        "domain_prefixes": ["adult", "premium", "exclusive", "private", "vip", "elite", "secret", "members", "xxx", "hot"],
+        "domain_suffixes": ["adult", "xxx", "sex", "hot", "premium", "vip", "private", "members", "exclusive", "content"]
+    },
+    "food_beverage": {
+        "keywords": ["restaurant", "cafe", "bar", "bistro", "diner", "eatery", "kitchen", "grill", "bakery", "brewery"],
+        "services": ["fine dining", "casual dining", "coffee shop", "food truck", "catering services", "bakery products", "craft brewing", "wine bar", "juice bar", "ice cream shop"],
+        "targets": ["food lovers", "families", "couples", "business professionals", "coffee enthusiasts", "beer lovers", "health-conscious diners", "late-night diners", "breakfast crowd", "lunch crowd"],
+        "benefits": ["delicious food", "great atmosphere", "fresh ingredients", "friendly service", "affordable prices", "unique flavors", "cozy environment", "quick service", "healthy options", "memorable experience"],
+        "domain_prefixes": ["taste", "fresh", "delicious", "gourmet", "savory", "sweet", "spicy", "crispy", "juicy", "yummy"],
+        "domain_suffixes": ["eats", "bites", "kitchen", "cafe", "bar", "grill", "taste", "flavor", "food", "dine"]
+    },
+    "ecommerce": {
+        "keywords": ["marketplace", "store", "shop", "retail", "commerce", "sales", "products", "inventory", "catalog", "checkout"],
+        "services": ["online retail", "product sales", "marketplace platform", "dropshipping", "wholesale distribution", "custom products", "subscription boxes", "digital products", "handmade goods", "vintage items"],
+        "targets": ["consumers", "businesses", "collectors", "enthusiasts", "professionals", "hobbyists", "parents", "millennials", "Gen Z", "seniors"],
+        "benefits": ["convenient shopping", "competitive prices", "fast delivery", "quality products", "unique selection", "personalized experience", "reliable service", "secure payments", "easy returns", "expert curation"],
+        "domain_prefixes": ["shop", "buy", "get", "find", "best", "top", "prime", "select", "choice", "deal"],
+        "domain_suffixes": ["store", "shop", "market", "deals", "find", "buy", "get", "hub", "zone", "place"]
+    },
+    "consulting": {
+        "keywords": ["consulting", "advisory", "strategy", "expertise", "guidance", "solutions", "optimization", "transformation", "implementation", "analysis"],
+        "services": ["business strategy", "digital transformation", "operational efficiency", "market research", "organizational development", "process improvement", "risk management", "compliance consulting", "change management", "performance optimization"],
+        "targets": ["Fortune 500 companies", "mid-market businesses", "startups", "non-profits", "government agencies", "healthcare organizations", "financial institutions", "manufacturing companies", "retail chains", "technology firms"],
+        "benefits": ["drive growth", "reduce operational costs", "improve efficiency", "mitigate risks", "enhance performance", "accelerate transformation", "optimize processes", "increase profitability", "ensure compliance", "gain competitive advantage"],
+        "domain_prefixes": ["apex", "prime", "elite", "strategic", "expert", "pro", "advanced", "premier", "optimal", "peak"],
+        "domain_suffixes": ["consulting", "advisors", "experts", "solutions", "group", "partners", "associates", "strategy", "insights", "guidance"]
+    },
+    "healthcare": {
+        "keywords": ["health", "medical", "wellness", "care", "treatment", "therapy", "diagnosis", "prevention", "recovery", "fitness"],
+        "services": ["telemedicine", "mental health counseling", "physical therapy", "nutrition consulting", "wellness coaching", "medical imaging", "diagnostic testing", "preventive care", "rehabilitation services", "health monitoring"],
+        "targets": ["patients", "families", "seniors", "athletes", "chronic condition sufferers", "busy professionals", "new mothers", "mental health seekers", "fitness enthusiasts", "healthcare providers"],
+        "benefits": ["improve health outcomes", "reduce healthcare costs", "increase accessibility", "enhance quality of life", "prevent disease", "accelerate recovery", "provide personalized care", "ensure convenience", "maintain wellness", "support mental health"],
+        "domain_prefixes": ["vital", "care", "health", "wellness", "heal", "life", "pure", "strong", "fit", "balance"],
+        "domain_suffixes": ["health", "care", "wellness", "medical", "fit", "life", "vital", "heal", "therapy", "clinic"]
+    },
+    "fintech": {
+        "keywords": ["financial", "payment", "banking", "investment", "lending", "trading", "cryptocurrency", "blockchain", "wealth", "insurance"],
+        "services": ["digital payments", "personal finance management", "investment platforms", "lending solutions", "cryptocurrency trading", "financial planning", "expense tracking", "budget management", "robo-advisory", "insurance technology"],
+        "targets": ["millennials", "small businesses", "investors", "entrepreneurs", "freelancers", "students", "retirees", "families", "high-net-worth individuals", "financial advisors"],
+        "benefits": ["simplify finances", "reduce fees", "increase returns", "improve financial literacy", "automate investing", "enhance security", "provide transparency", "enable accessibility", "optimize spending", "build wealth"],
+        "domain_prefixes": ["smart", "quick", "easy", "secure", "trust", "prime", "gold", "digital", "crypto", "wealth"],
+        "domain_suffixes": ["pay", "finance", "money", "wealth", "invest", "fund", "bank", "coin", "capital", "financial"]
+    },
+    "education": {
+        "keywords": ["learning", "education", "training", "course", "skill", "knowledge", "development", "certification", "academy", "tutoring"],
+        "services": ["online courses", "skill development", "professional training", "certification programs", "tutoring services", "language learning", "test preparation", "corporate training", "educational content", "learning management"],
+        "targets": ["students", "professionals", "career changers", "educators", "corporations", "parents", "lifelong learners", "job seekers", "entrepreneurs", "remote workers"],
+        "benefits": ["advance careers", "gain new skills", "improve performance", "increase earning potential", "enhance knowledge", "achieve certifications", "build confidence", "stay competitive", "enable flexibility", "foster growth"],
+        "domain_prefixes": ["learn", "smart", "quick", "skill", "master", "expert", "bright", "wise", "sharp", "edu"],
+        "domain_suffixes": ["learn", "academy", "edu", "school", "training", "skills", "course", "study", "knowledge", "master"]
+    },
+    "food": {
+        "keywords": ["food", "restaurant", "delivery", "catering", "cooking", "recipe", "meal", "dining", "cuisine", "nutrition"],
+        "services": ["food delivery", "meal planning", "catering services", "restaurant management", "recipe sharing", "nutrition consulting", "cooking classes", "food blogging", "restaurant reviews", "meal prep services"],
+        "targets": ["busy professionals", "families", "food lovers", "restaurants", "event planners", "health-conscious consumers", "cooking enthusiasts", "diet followers", "college students", "seniors"],
+        "benefits": ["save time", "eat healthier", "discover new cuisines", "reduce food waste", "simplify meal planning", "support local restaurants", "learn cooking skills", "track nutrition", "enjoy convenience", "explore flavors"],
+        "domain_prefixes": ["fresh", "tasty", "quick", "daily", "local", "home", "chef", "gourmet", "healthy", "bite"],
+        "domain_suffixes": ["eats", "food", "kitchen", "meal", "bite", "dish", "taste", "chef", "cook", "feast"]
+    }
+}

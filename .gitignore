@@ -1,0 +1,9 @@
+old
+venv
+.env
+__pycache__
+test.py
+test-openai.py
+models/
+mlruns/
+flan-t5-domain-generator

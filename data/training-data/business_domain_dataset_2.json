@@ -1,0 +1,26 @@
+[
+  {
+    "business_description": "Custom team collaboration for small businesses",
+    "domain_suggestions": [
+      "applab.ly",
+      "apppro.io",
+      "integrationhub.app",
+      "appflow.ai",
+      "teamapp.ly"
+    ],
+    "industry": "saas",
+    "training_text": "Business: Custom team collaboration for small businesses\nDomains: applab.ly, apppro.io, integrationhub.app, appflow.ai, teamapp.ly"
+  },
+  {
+    "business_description": "local gallery specializing in sporting goods",
+    "domain_suggestions": [
+      "novamax.app",
+      "galleryemporium.ai",
+      "plazamart.ai",
+      "novaify.co",
+      "expressmarket.tech"
+    ],
+    "industry": "retail",
+    "training_text": "Business: local gallery specializing in sporting goods\nDomains: novamax.app, galleryemporium.ai, plazamart.ai, novaify.co, expressmarket.tech"
+  }
+]
