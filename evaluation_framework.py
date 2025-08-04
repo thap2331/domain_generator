@@ -229,9 +229,6 @@ class QuickEvaluator:
 
         return scores
 
-# ================================
-# 5. TESTING AND EVALUATION
-# ================================
 
 def run_comprehensive_test():
     """Run a comprehensive test of the domain generation system"""

@@ -2,9 +2,8 @@ from transformers import T5Tokenizer, T5ForConditionalGeneration
 import json
 
 class Utils:
-    def __init__(self):
-        samples = 5000
-        self.model_name = f'flan-t5-domain-generator-final-{samples}'
+    def __init__(self, model_name: str):
+        self.model_name = model_name
         self.tokenizer = T5Tokenizer.from_pretrained(f"./models/{self.model_name}")
         self.fine_tuned_model = T5ForConditionalGeneration.from_pretrained(f"./models/{self.model_name}")
         
