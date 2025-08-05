@@ -88,4 +88,4 @@ def predict_domains_for_all_input_texts():
 # print('business description: adult content website with explicit nude content')
 # try_manual_input_text('adult content website with explicit nude content')
 
-predict_domains_for_all_input_texts()
+# predict_domains_for_all_input_texts()
