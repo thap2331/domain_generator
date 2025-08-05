@@ -8,5 +8,5 @@ region = "us-west-2"
 confirm_changeset = true
 capabilities = "CAPABILITY_IAM"
 disable_rollback = true
-parameter_overrides = "OpenAISecretsName=\"openai\" MemorySize=\"10240\" EphemeralStorage=\"\""
+parameter_overrides = "OpenAISecretsName=\"openai\" MemorySize=\"3008\""
 image_repositories = []

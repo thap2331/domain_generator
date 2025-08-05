@@ -12,12 +12,10 @@ Parameters:
     Type: Number
     Description: |
       The amount of memory (in MB) allocated to the Lambda function.
-    Default: "10240"
+    Default: "3008"
     MinValue: "128"
-    MaxValue: "10240"
-    ConstraintDescription: Must be a value between 128 MB and 10240 MB
-  EphemeralStorage:
-      Size: 2048
+    MaxValue: "3008"
+    ConstraintDescription: Must be a value between 128 MB and 3008 MB
 
 Resources:
   DomainGenerator:
@@ -32,6 +30,8 @@ Resources:
         AuthType: NONE
       Handler: model.lambda_handler
       Runtime: python3.12
+      EphemeralStorage:
+        Size: 1024
       Timeout: 300 # 5 Minutes
       #Using provisioned concurrency can potentially increase performance but also increases costs.
       #Since one of my goals is to run this solution with the lowest cost possible 

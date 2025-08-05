@@ -1,90 +1,13 @@
 import os
 import openai
 import json
-import boto3
-import os
-import torch
-from transformers import T5ForConditionalGeneration, T5Tokenizer
-import time
-from typing import List, Dict
 import re
-import numpy as np
+import requests
+from typing import List, Dict
 from pydantic import BaseModel
-
-
-# Global variables for caching
-model = None
-tokenizer = None
-s3_client = boto3.client('s3')
-
-BUCKET_NAME = 'mlpcacourts'
-MODEL_PREFIX = 'models/flan-t5-domain-generator-final-5000/'
-LOCAL_MODEL_PATH = '/tmp/model'
+import numpy as np
 
 openai_client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
-def download_model_from_s3():
-    """Download all model files from S3 to /tmp"""
-    print("Downloading model from S3...")
-    start_time = time.time()
-    
-    # Create local directory
-    os.makedirs(LOCAL_MODEL_PATH, exist_ok=True)
-    
-    # List all files in the model directory
-    response = s3_client.list_objects_v2(
-        Bucket=BUCKET_NAME,
-        Prefix=MODEL_PREFIX
-    )
-    
-    if 'Contents' not in response:
-        raise Exception(f"No model files found at s3://{BUCKET_NAME}/{MODEL_PREFIX}")
-    
-    # Download each file
-    for obj in response['Contents']:
-        s3_key = obj['Key']
-        # Get filename relative to model prefix
-        filename = s3_key.replace(MODEL_PREFIX, '')
-        
-        if filename:  # Skip if it's just the prefix/directory
-            local_file_path = os.path.join(LOCAL_MODEL_PATH, filename)
-            
-            # Create subdirectories if needed
-            os.makedirs(os.path.dirname(local_file_path), exist_ok=True)
-            
-            print(f"Downloading {filename}...")
-            s3_client.download_file(BUCKET_NAME, s3_key, local_file_path)
-    
-    download_time = time.time() - start_time
-    print(f"Model downloaded in {download_time:.2f} seconds")
-
-def load_model():
-    """Load model from /tmp, downloading from S3 if needed"""
-    global model, tokenizer
-    
-    if model is None:
-        # Check if model exists locally, if not download it
-        if not os.path.exists(LOCAL_MODEL_PATH) or not os.listdir(LOCAL_MODEL_PATH):
-            download_model_from_s3()
-        
-        print("Loading model into memory...")
-        start_time = time.time()
-        
-        # Load tokenizer and model
-        tokenizer = T5Tokenizer.from_pretrained(LOCAL_MODEL_PATH, local_files_only=True)
-        model = T5ForConditionalGeneration.from_pretrained(
-            LOCAL_MODEL_PATH,
-            local_files_only=True,
-            torch_dtype=torch.float16,  # Use half precision to save memory
-            device_map="auto"
-        )
-        
-        model.eval()
-        
-        load_time = time.time() - start_time
-        print(f"Model loaded in {load_time:.2f} seconds")
-    
-    return model, tokenizer
 
 def lambda_handler(event, context):
     try:
@@ -110,8 +33,21 @@ def lambda_handler(event, context):
                 "status": "blocked",
                 "message": "Request contains inappropriate content"
                 }
+
+        payload = {
+                        "inputs": [
+                            input_text
+                        ],
+                        "parameters": {
+                            "max_new_tokens": 256,
+                            "temperature": 0.1,
+                            "return_full_text": False
+                        }
+                    }
         
-        generated_domains = query_model([input_text])[0]
+        generated_domains_str = query_model(payload)
+        generated_domains = generated_domains_str.split(',')
+        generated_domains = list(set([i.strip() for i in generated_domains]))
         print(f"Text generation completed in seconds")
         print(f"Generated domains: {generated_domains}")
 
@@ -122,6 +58,8 @@ def lambda_handler(event, context):
                 "message": "Request contains inappropriate content"
                 }
 
+        #remove empty domains
+        generated_domains = [domain for domain in generated_domains if domain]
         domain_with_confidence_score = calculate_domains_confidence_score(input_text, generated_domains)
 
         print(f"Confidence score per domain: {domain_with_confidence_score}")
@@ -140,32 +78,22 @@ def lambda_handler(event, context):
             'statusCode': 500,
             'body': json.dumps({
                 'error': str(e),
-                'model_loaded': model is not None
             })
         }
 
-def query_model(input_texts):
-    fine_tuned_model, tokenizer = load_model()
-    inputs = tokenizer(
-        input_texts,
-        return_tensors="pt",
-        padding=True,
-        truncation=True,
-        max_length=128
+def query_model(payload):
+    headers = {
+        "Accept" : "application/json",
+        "Content-Type": "application/json" 
+    }
+
+    response = requests.post(
+        "https://fi31ip7vhnqcjfg7.us-east-1.aws.endpoints.huggingface.cloud",
+        headers=headers,
+        json=payload
     )
 
-    generated_domains = fine_tuned_model.generate(
-        inputs["input_ids"],
-        attention_mask=inputs["attention_mask"],
-        max_length=128,
-        num_return_sequences=1
-        )
-    decoded_domains = [tokenizer.decode(g, skip_special_tokens=True) for g in generated_domains]
-    decoded_domains = [i.split(',') for i in decoded_domains]
-    decoded_domains = [[j.strip() for j in i] for i in decoded_domains]
-    decoded_domains = [list(set(i)) for i in decoded_domains]
-
-    return decoded_domains
+    return response.json()[0][0]['generated_text']
 
 def openai_moderation(business_desc: str):
     '''
