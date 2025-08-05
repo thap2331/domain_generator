@@ -1,0 +1,15 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/d4157b11f2734b28a3764e61d1a69f2a/artifacts
+deleted_time: 1754114486886
+end_time: 1754113483071
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: deleted
+run_id: d4157b11f2734b28a3764e61d1a69f2a
+run_name: overjoyed-sheep-778
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754113417346
+status: 4
+tags: []
+user_id: suraj

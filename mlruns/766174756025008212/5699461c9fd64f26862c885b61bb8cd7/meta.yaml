@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/5699461c9fd64f26862c885b61bb8cd7/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: 5699461c9fd64f26862c885b61bb8cd7
+run_name: resilient-donkey-607
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754117062163
+status: 1
+tags: []
+user_id: suraj

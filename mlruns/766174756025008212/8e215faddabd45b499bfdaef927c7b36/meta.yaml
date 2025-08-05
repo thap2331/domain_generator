@@ -1,0 +1,15 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/8e215faddabd45b499bfdaef927c7b36/artifacts
+deleted_time: 1754114872131
+end_time: 1754114531802
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: deleted
+run_id: 8e215faddabd45b499bfdaef927c7b36
+run_name: agreeable-calf-230
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754114477495
+status: 4
+tags: []
+user_id: suraj

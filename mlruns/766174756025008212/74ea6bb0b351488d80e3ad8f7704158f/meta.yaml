@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/74ea6bb0b351488d80e3ad8f7704158f/artifacts
+end_time: 1754115185364
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: 74ea6bb0b351488d80e3ad8f7704158f
+run_name: popular-lamb-657
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754115184941
+status: 4
+tags: []
+user_id: suraj

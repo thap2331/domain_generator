@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/ce6104fa60e04a78a39354df52c668d4/artifacts
+end_time: 1754116945649
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: ce6104fa60e04a78a39354df52c668d4
+run_name: hilarious-ape-886
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754116883051
+status: 4
+tags: []
+user_id: suraj

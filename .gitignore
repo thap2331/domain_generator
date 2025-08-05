@@ -5,7 +5,9 @@ __pycache__
 test.py
 test-openai.py
 models/
-mlruns/
-flan-t5-domain-generator*
+mlruns/766174756025008212/models/
+flan-t5-domain-generator
+flan-t5-domain-generator-iterative
+
 .aws-sam/
 ./deploy/.aws-sam/

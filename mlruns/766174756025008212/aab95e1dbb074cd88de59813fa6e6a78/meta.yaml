@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/aab95e1dbb074cd88de59813fa6e6a78/artifacts
+end_time: 1754273196095
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: aab95e1dbb074cd88de59813fa6e6a78
+run_name: monumental-stag-720
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754272915595
+status: 3
+tags: []
+user_id: suraj

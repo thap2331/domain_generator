@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/0d12651c34264fbca9d53a62c34d7b00/artifacts
+end_time: 1754115284528
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: 0d12651c34264fbca9d53a62c34d7b00
+run_name: righteous-perch-268
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754115236598
+status: 4
+tags: []
+user_id: suraj

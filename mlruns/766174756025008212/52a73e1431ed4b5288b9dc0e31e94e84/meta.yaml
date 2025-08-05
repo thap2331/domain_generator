@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/52a73e1431ed4b5288b9dc0e31e94e84/artifacts
+end_time: 1754113851351
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: 52a73e1431ed4b5288b9dc0e31e94e84
+run_name: painted-whale-897
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754113760949
+status: 3
+tags: []
+user_id: suraj

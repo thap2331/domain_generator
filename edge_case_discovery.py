@@ -25,9 +25,11 @@ class FailureType(Enum):
     SAFETY_ISSUE = "safety_issue"
     HALLUCINATION = "hallucination"
     FORMAT_ERROR = "format_error"
-    DOMAIN_SPECIFIC = "domain_specific"
     REFUSAL_ERROR = "refusal_error"
     CONSISTENCY_ERROR = "consistency_error"
+    INVALID_DOMAIN = "invalid_domain"
+    POOR_QUALITY_DOMAIN = "poor_quality_domain"
+    NO_DOMAIN_GENERATION = "no_domain_generation"
 
 class Severity(Enum):
     LOW = 1
@@ -143,15 +145,15 @@ class EdgeCaseDiscovery:
             is_failure = True
             failure_type = FailureType.FORMAT_ERROR
             severity = Severity.HIGH
-            root_cause = "Could not generate any domains. This should be because of adult content. Check the input."
+            root_cause = "Could not generate any domains. This could be because of adult content. Check the input."
         elif invalid_domains:
             is_failure = True
-            failure_type = FailureType.FORMAT_ERROR
+            failure_type = FailureType.INVALID_DOMAIN
             severity = Severity.HIGH
             root_cause = "Invalid domains found in the response"
         elif poor_quality_domains:
             is_failure = True
-            failure_type = FailureType.FORMAT_ERROR
+            failure_type = FailureType.POOR_QUALITY_DOMAIN
             severity = Severity.HIGH
             root_cause = "Poor quality domains found in the response"
         elif check_openai_moderation[0]:
@@ -302,7 +304,7 @@ class EdgeCaseDiscovery:
 
 def main():
     """Example usage for domain name suggestion testing"""
-    samples = 5080
+    samples = 5000
     model_name = f'flan-t5-domain-generator-final-{samples}'
     discovery = EdgeCaseDiscovery(model_name=model_name)
     

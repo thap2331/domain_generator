@@ -46,16 +46,6 @@ class BusinessDomainGenerator:
         self.company_prefixes = ['Smart', 'Quick', 'Pro', 'Elite', 'Prime', 'Apex', 'Digital', 'Modern', 'Advanced', 'Optimal']
         self.company_suffixes = ['Solutions', 'Systems', 'Technologies', 'Innovations', 'Labs', 'Works', 'Hub', 'Group', 'Partners', 'Dynamics']
         
-        # Domain generation patterns
-        self.domain_patterns = [
-            '{prefix}{keyword}',
-            '{keyword}{suffix}',
-            '{prefix}{suffix}',
-            '{industry_word}{action}',
-            '{action}{industry_word}',
-            '{benefit_word}{suffix}',
-            '{prefix}{benefit_word}'
-        ]
         
         self.tlds = ['.com', '.io', '.co', '.tech', '.app', '.dev', '.ai', '.ly', '.me', '.org']
 
