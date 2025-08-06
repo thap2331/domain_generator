@@ -268,6 +268,8 @@
 **Deploy**
 - I deployed the model on Hugging Face and set up an AWS Lambda function to call the Hugging Face Inference API. The deployment was done using AWS SAM, Lambda, and CloudFormation, deliberately avoiding SageMaker to keep infrastructure costs low.
 - Please let me know once you're done testing, so I can disable the endpoint and avoid unnecessary charges.
+- *How to request to the endpoint?*
+    - Option A: See `deploy/test_lambda_api.py` and modify it if you like and run `python deploy/test_lambda_api.py`
 
 **Other notes**
 - All of the development is done using `.py` files. I converted a few python scripts to `jupyter notebook` for your convenience.
