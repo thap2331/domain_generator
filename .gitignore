@@ -11,3 +11,4 @@ flan-t5-domain-generator-iterative
 
 .aws-sam/
 ./deploy/.aws-sam/
+.ipynb_checkpoints/
