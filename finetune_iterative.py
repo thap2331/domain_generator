@@ -1,5 +1,4 @@
 import json
-import torch
 from transformers import (
     T5ForConditionalGeneration, 
     T5Tokenizer, 
@@ -12,8 +11,12 @@ from sklearn.model_selection import train_test_split
 import mlflow
 import mlflow.pytorch
 import os
-from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score
 from utils import Utils
+from evaluation_framework import QuickEvaluator
+
+eval = QuickEvaluator()
+utils = Utils()
+
 # Initialize MLflow
 mlflow.set_experiment("Domain Generation Experiment")
 
@@ -175,4 +178,70 @@ with mlflow.start_run():
     # Log model
     mlflow.pytorch.log_model(model, f"model-{total_samples}", input_example=input_example)
 
-    
+    print("Predicting domains and running evaluation")
+    validation_data = []
+    eval_samples = 100
+    eval_data_file_name = "./data/eval-data/data_eval_100.json"
+    with open(eval_data_file_name, "r") as f:
+        validation_data = json.load(f)
+    # Extract inputs and targets from validation data
+    validation_inputs = [item["business_description"] for item in validation_data]
+    validation_targets = [item["domain_suggestions"] for item in validation_data]
+
+    # Create validation dataset
+    validation_dataset = Dataset.from_dict({
+        "input_text": validation_inputs,
+        "target_text": validation_targets
+    })
+    input_texts = list(validation_dataset["input_text"])
+    # Convert input texts to input IDs and attention masks
+    inputs = tokenizer(
+        input_texts,
+        return_tensors="pt",  # Return PyTorch tensors
+        padding=True,
+        truncation=True,
+        max_length=128
+    )
+
+    # use fine tuned model to predict domains for the validation dataset
+    fine_tuned_model_name = f"flan-t5-domain-generator-final-{total_samples}"
+    fine_tuned_model = T5ForConditionalGeneration.from_pretrained(f"./models/{fine_tuned_model_name}")
+    generated_domains = fine_tuned_model.generate(
+        inputs["input_ids"],
+        attention_mask=inputs["attention_mask"],
+        max_length=128,
+        num_return_sequences=1
+        )
+    decoded_domains = [tokenizer.decode(g, skip_special_tokens=True) for g in generated_domains]
+    #save the data to a file
+    file_name = f"./data/eval-data/predicted_domains_and_ground_truth_{total_samples}_{fine_tuned_model_name}.json"
+    with open(file_name, "w") as f:
+        json.dump(decoded_domains, f)
+
+    #evaluate the generated domains
+    all_domains = utils.clean_decoded_domains(decoded_domains)
+    all_data, scores = [], []
+    for i in range(len(all_domains)):
+        if i%10 == 0:
+            print(f"Evaluating {i} of {len(all_domains)} business descriptions")
+        business_desc = validation_data[i]['business_description']
+        domains = all_domains[i]
+        industry = validation_data[i]['industry']
+        all_data.append({
+            'business_description': business_desc,
+            'ground_truth_domains': validation_data[i]['domain_suggestions'],
+            'industry': industry,
+            'predicted_domains': domains,
+            'evaluation_results': eval.fine_tuned_calculate_overall_score(business_desc, domains)
+        })
+        scores.append(eval.fine_tuned_calculate_overall_score(business_desc, domains)['overall_score'])
+
+    average_score = sum(scores)/len(scores)
+    utils.save_final_metric(average_score, fine_tuned_model_name, eval_samples, eval_data_file_name)
+    #log the average score to mlflow
+    mlflow.log_metric(f"average_score_on_eval_data_{eval_samples}", average_score)
+
+    #save the data to a json file
+    with open(file_name, "w") as f:
+        json.dump(all_data, f, indent=4)
+

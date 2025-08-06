@@ -1,3 +1,5 @@
+# Technical report
+
 **Methodology & Initial Results**
 
     - Dataset creation approach and baseline model selection
@@ -172,6 +174,7 @@
 
 **Deploy**
 - I deployed the model in huggingface. Then I deployed aws lambda that calls huggingface api. I used aws sam, aws lambda, and aws cloudformation to deploy it in aws lambda. I avoided sagemaker to keep it cheaper.
+- I will keep the API endpoint running so that you can test. However, please let me know once you are done testing so that I can turn off the API endpoint for it to not incur charges.
 
 **Other notes**
 - All of the development is done using `.py` files. I converted a few python scripts to `jupyter notebook` for your convenience.
