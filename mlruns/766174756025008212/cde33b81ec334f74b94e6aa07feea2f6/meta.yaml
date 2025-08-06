@@ -1,0 +1,15 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/cde33b81ec334f74b94e6aa07feea2f6/artifacts
+deleted_time: 1754114486883
+end_time: 1754114351604
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: deleted
+run_id: cde33b81ec334f74b94e6aa07feea2f6
+run_name: fearless-rook-369
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754114273970
+status: 4
+tags: []
+user_id: suraj

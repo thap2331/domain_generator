@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/e95686235c894252bba07adff9874b56/artifacts
+end_time: 1754115387628
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: e95686235c894252bba07adff9874b56
+run_name: chill-stoat-862
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754115334808
+status: 4
+tags: []
+user_id: suraj

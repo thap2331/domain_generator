@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/45306438cb314793bb74d59ffd83f8ee/artifacts
+end_time: 1754116726300
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: 45306438cb314793bb74d59ffd83f8ee
+run_name: bemused-mule-357
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754116667542
+status: 4
+tags: []
+user_id: suraj

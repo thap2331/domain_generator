@@ -7,8 +7,6 @@ from dotenv import load_dotenv
 from pydantic import BaseModel
 from openai import OpenAI
 
-
-
 load_dotenv()
 openai_client = OpenAI()
 
@@ -229,95 +227,13 @@ class QuickEvaluator:
 
         return scores
 
-# ================================
-# 5. TESTING AND EVALUATION
-# ================================
-
-def run_comprehensive_test():
-    """Run a comprehensive test of the domain generation system"""
-    
-    print("=== COMPREHENSIVE DOMAIN GENERATOR TEST ===\n")
-    
-    # Initialize components
-    evaluator = QuickEvaluator()  # Will use rule-based evaluation
-    #edge_detector = EdgeCaseDetector()
-    #load test cases from data/eval-data/data_eval_100.json
-    with open('data/eval-data/data_eval_100.json', 'r') as f:
-        test_cases = json.load(f)
-    print(f"Loaded {len(test_cases)} test cases")
-
-    
-    results = []
-    
-    # for i, data_dict in enumerate(test_cases[42:46]):
-    #     business_desc = data_dict["business_description"]
-    #     #empty list if no domains are generated
-    #     output_domains = data_dict["domain_suggestions"]
-    #     industry = data_dict["industry"]
-    #     # if industry == "adult_entertainment":
-    #     #     print('Here', i, business_desc, output_domains)
-    #     print("-" * 50)
-    #     print(f"Test Case {i+1}: {business_desc}; and output domains: {output_domains}")
-
-    #     # Evaluate domains
-    #     rule_based_evaluation = evaluator._rule_based_evaluation(business_desc, output_domains, industry)
-    #     openai_evaluation = evaluator._openai_evaluation(business_desc, output_domains)
-    #     similarity_scores = evaluator.similarity_check(business_desc, output_domains)
-    #     print(f"\nRule based evaluation: {rule_based_evaluation}")
-    #     print(f"\nOpenAI evaluation: {openai_evaluation}")
-    #     print(f"\nSimilarity scores: {similarity_scores}")
-        
-        
-        # Check for safety issues first
-        # edge_issues = edge_detector.detect_issues(business_desc, [])
-        
-        # if edge_issues['inappropriate_request']:
-        #     print("❌ BLOCKED: Inappropriate content detected")
-        #     result = {
-        #         'business_description': business_desc,
-        #         'status': 'blocked',
-        #         'domains': [],
-        #         'evaluation': {'overall_score': 0},
-        #         'edge_issues': edge_issues
-        #     }
-        # else:
-        #     # Generate domains (using fallback method since model isn't trained yet)
-        #     domains = generate_fallback_domains(business_desc)
-        #     print(f"Generated domains: {domains}")
-            
-        #     # Evaluate domains
-        #     evaluation = evaluator.evaluate_domains(business_desc, domains)
-        #     print(f"Overall score: {evaluation['overall_score']:.2f}")
-            
-        #     # Check for edge cases
-        #     edge_issues = edge_detector.detect_issues(business_desc, domains)
-            
-        #     if edge_issues['invalid_domains']:
-        #         print(f"⚠️  Invalid domains detected: {edge_issues['invalid_domains']}")
-        #     if edge_issues['poor_quality_domains']:
-        #         print(f"⚠️  Poor quality domains: {edge_issues['poor_quality_domains']}")
-            
-        #     result = {
-        #         'business_description': business_desc,
-        #         'status': 'success',
-        #         'domains': domains,
-        #         'evaluation': evaluation,
-        #         'edge_issues': edge_issues
-        #     }
-        
-        # results.append(result)
-        # print("\n")
-    
-    # return results
-# run_comprehensive_test()
-
 class RunEvals:
     def __init__(self):
         self.evaluator = QuickEvaluator()  # Will use rule-based evaluation
 
     def single_eval(self, business_desc: str, domains: List[str], industry: str=None, get_overall_score: bool=False) -> Dict:
         '''
-        This evaluates a single business description and domains.
+        This evaluates a single business description and domains for the baseline evaluation data without using the any models.
         '''
         domain_confidence_scores = self.evaluator.calculate_confidence_score(business_desc, domains, industry)
         evaluation_results = {
@@ -342,7 +258,7 @@ class RunEvals:
 
     def model_eval(self, business_desc: str, domains: List[str]) -> Dict:
         '''
-        This evaluates a single business description and domains.
+        This evaluates a single business description and domains for the fine tuned models.
         '''
         combined_score = float(self.evaluator.rule_based_evaluation_and_openai_moderation(business_desc, domains))
 

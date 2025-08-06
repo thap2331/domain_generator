@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/cc05e9efe71445a081dfea2d9e580ea3/artifacts
+end_time: 1754114916181
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: cc05e9efe71445a081dfea2d9e580ea3
+run_name: tasteful-bug-437
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754114869983
+status: 4
+tags: []
+user_id: suraj

@@ -1,0 +1,72 @@
+Transform: AWS::Serverless-2016-10-31
+
+Description: Domain Generator
+
+Parameters:
+  OpenAISecretsName:
+    Type: String
+    Description: The name of the AWS Secrets Manager secret containing OpenAI API key.
+    Default: openai
+
+  MemorySize:
+    Type: Number
+    Description: |
+      The amount of memory (in MB) allocated to the Lambda function.
+    Default: "3008"
+    MinValue: "128"
+    MaxValue: "3008"
+    ConstraintDescription: Must be a value between 128 MB and 3008 MB
+
+Resources:
+  DomainGenerator:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: DomainGenerator
+      Description: Domain Generator
+      Architectures: [x86_64]
+      MemorySize: !Ref MemorySize
+      CodeUri: ./src/
+      FunctionUrlConfig:
+        AuthType: NONE
+      Handler: model.lambda_handler
+      Runtime: python3.12
+      EphemeralStorage:
+        Size: 1024
+      Timeout: 300 # 5 Minutes
+      #Using provisioned concurrency can potentially increase performance but also increases costs.
+      #Since one of my goals is to run this solution with the lowest cost possible 
+      # ProvisionedConcurrencyConfig:
+      #   ProvisionedConcurrentExecutions: 5
+      Environment:
+        Variables:
+          OPENAI_API_KEY: !Sub "{{resolve:secretsmanager:${OpenAISecretsName}:SecretString:OPENAI_API_KEY}}"
+          S3_BUCKET_NAME: mlpcacourts
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /
+            Method: post
+      Policies:
+        - Version: "2012-10-17"
+          Statement:
+            - Sid: AllowLambdaSelfInvoke
+              Effect: Allow
+              Action:
+                - lambda:InvokeFunction
+              Resource: !Sub "arn:aws:lambda:${AWS::Region}:${AWS::AccountId}:function:DomainGenerator*"
+        - Version: "2012-10-17"
+          Statement:
+            - Sid: AllowS3Access
+              Effect: Allow
+              Action:
+                - s3:GetObject
+                - s3:ListBucket
+              Resource:
+                - arn:aws:s3:::mlpcacourts
+                - arn:aws:s3:::mlpcacourts/models/*
+
+Outputs:
+  DomainGeneratorUrl:
+    Description: "Lambda Function URL for Domain Generator"
+    Value: !GetAtt DomainGeneratorUrl.FunctionUrl

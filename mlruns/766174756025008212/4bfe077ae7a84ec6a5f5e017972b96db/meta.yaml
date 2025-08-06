@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/4bfe077ae7a84ec6a5f5e017972b96db/artifacts
+end_time: 1754115492613
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: 4bfe077ae7a84ec6a5f5e017972b96db
+run_name: languid-shark-157
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754115437083
+status: 4
+tags: []
+user_id: suraj

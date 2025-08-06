@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/179e147a016447468ede38b3b03e2697/artifacts
+end_time: 1754116028902
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: 179e147a016447468ede38b3b03e2697
+run_name: abrasive-quail-115
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754115983978
+status: 4
+tags: []
+user_id: suraj

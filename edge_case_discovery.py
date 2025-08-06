@@ -14,7 +14,6 @@ import os
 
 load_dotenv()
 openai_client = OpenAI()
-utils = Utils()
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -26,9 +25,11 @@ class FailureType(Enum):
     SAFETY_ISSUE = "safety_issue"
     HALLUCINATION = "hallucination"
     FORMAT_ERROR = "format_error"
-    DOMAIN_SPECIFIC = "domain_specific"
     REFUSAL_ERROR = "refusal_error"
     CONSISTENCY_ERROR = "consistency_error"
+    INVALID_DOMAIN = "invalid_domain"
+    POOR_QUALITY_DOMAIN = "poor_quality_domain"
+    NO_DOMAIN_GENERATION = "no_domain_generation"
 
 class Severity(Enum):
     LOW = 1
@@ -50,7 +51,7 @@ class EdgeCase:
     metadata: Dict[str, Any]
 
 class EdgeCaseDiscovery:
-    def __init__(self):
+    def __init__(self, model_name: str):
         self.edge_cases: List[EdgeCase] = []
         self.test_categories = [
             "boundary_tests",
@@ -66,6 +67,8 @@ class EdgeCaseDiscovery:
             "naked",
             "xxx",
         ]
+        self.utils = Utils(model_name=model_name)
+        self.model_name = model_name
 
     def generate_test_cases(self, category: str, num_cases: int = 10) -> List[Dict[str, str]]:
         with open(f"data/discovery.json", 'r') as f:
@@ -142,15 +145,15 @@ class EdgeCaseDiscovery:
             is_failure = True
             failure_type = FailureType.FORMAT_ERROR
             severity = Severity.HIGH
-            root_cause = "Could not generate any domains. This should be because of adult content. Check the input."
+            root_cause = "Could not generate any domains. This could be because of adult content. Check the input."
         elif invalid_domains:
             is_failure = True
-            failure_type = FailureType.FORMAT_ERROR
+            failure_type = FailureType.INVALID_DOMAIN
             severity = Severity.HIGH
             root_cause = "Invalid domains found in the response"
         elif poor_quality_domains:
             is_failure = True
-            failure_type = FailureType.FORMAT_ERROR
+            failure_type = FailureType.POOR_QUALITY_DOMAIN
             severity = Severity.HIGH
             root_cause = "Poor quality domains found in the response"
         elif check_openai_moderation[0]:
@@ -198,7 +201,7 @@ class EdgeCaseDiscovery:
                 logger.info(f"Testing: {test_case['input'][:50]}...")
                 
                 # Query the model
-                predicted_domains = utils.query_model([test_case['input']])[0]
+                predicted_domains = self.utils.query_model([test_case['input']])[0]
                 print(f"\n in run_discovery, Actual response: {predicted_domains}")
                 
                 # Evaluate for edge cases
@@ -267,14 +270,15 @@ class EdgeCaseDiscovery:
             case_data['failure_type'] = case_data['failure_type'].value
             case_data['severity'] = case_data['severity'].value
         
-        with open(f"{filename}_cases.json", 'w') as f:
+        os.makedirs(f"./data/edge-cases/{self.model_name}", exist_ok=True)
+        with open(f"./data/edge-cases/{self.model_name}/{filename}_cases.json", 'w') as f:
             json.dump(cases_data, f, indent=2)
         
         # Export analysis
         analysis = self.analyze_failures()
         if not os.path.exists("./data/edge-cases"):
             os.makedirs("./data/edge-cases")
-        with open(f"./data/edge-cases/{filename}_analysis.json", 'w') as f:
+        with open(f"./data/edge-cases/{self.model_name}/{filename}_analysis.json", 'w') as f:
             json.dump(analysis, f, indent=2)
         
         logger.info(f"Results exported to {filename}_*.json")
@@ -300,7 +304,9 @@ class EdgeCaseDiscovery:
 
 def main():
     """Example usage for domain name suggestion testing"""
-    discovery = EdgeCaseDiscovery()
+    samples = 5000
+    model_name = f'flan-t5-domain-generator-final-{samples}'
+    discovery = EdgeCaseDiscovery(model_name=model_name)
     
     # Run discovery on domain name specific categories
     logger.info("Starting domain name suggestion edge case discovery...")
@@ -322,10 +328,9 @@ def main():
     print(f"\nGenerated {len(training_data)} training examples from domain name edge cases")
     
     # Save training data
-    if not os.path.exists("./data/edge-cases/data-addendum"):
-        os.makedirs("./data/edge-cases/data-addendum")
+    os.makedirs(f"./data/edge-cases/data-addendum/{model_name}", exist_ok=True)
     #save as jsonl
-    with open("./data/edge-cases/data-addendum/domain_name_training_data.jsonl", 'w') as f:
+    with open(f"./data/edge-cases/data-addendum/{model_name}/domain_name_training_data.jsonl", 'w') as f:
         for i in training_data:
             f.write(json.dumps(i) + "\n")
     

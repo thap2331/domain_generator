@@ -1,0 +1,26 @@
+{
+  "total_cases": 10,
+  "by_failure_type": {
+    "format_error": 10
+  },
+  "by_severity": {
+    "HIGH": 10
+  },
+  "by_category": {
+    "empty_input": 1,
+    "long_input": 1,
+    "prompt_injection": 1,
+    "repetition_request": 1,
+    "vague_description": 1,
+    "missing_specifics": 1,
+    "formatting": 2,
+    "weapons_business": 1,
+    "adult_content": 1
+  },
+  "improvement_strategies": {
+    "Add to training data": 10
+  },
+  "root_causes": {
+    "Invalid domains found in the response": 10
+  }
+}

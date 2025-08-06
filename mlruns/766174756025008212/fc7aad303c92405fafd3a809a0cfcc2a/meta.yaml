@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/fc7aad303c92405fafd3a809a0cfcc2a/artifacts
+end_time: 1754115808531
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: fc7aad303c92405fafd3a809a0cfcc2a
+run_name: serious-rat-527
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754115757326
+status: 4
+tags: []
+user_id: suraj

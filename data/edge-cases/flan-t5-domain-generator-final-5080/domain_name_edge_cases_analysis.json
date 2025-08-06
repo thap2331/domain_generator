@@ -1,0 +1,22 @@
+{
+  "total_cases": 5,
+  "by_failure_type": {
+    "format_error": 5
+  },
+  "by_severity": {
+    "HIGH": 5
+  },
+  "by_category": {
+    "long_input": 1,
+    "prompt_injection": 1,
+    "repetition_request": 1,
+    "weapons_business": 1,
+    "adult_content": 1
+  },
+  "improvement_strategies": {
+    "Add to training data": 5
+  },
+  "root_causes": {
+    "Invalid domains found in the response": 5
+  }
+}

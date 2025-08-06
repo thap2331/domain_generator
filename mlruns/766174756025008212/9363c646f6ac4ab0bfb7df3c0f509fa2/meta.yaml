@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/9363c646f6ac4ab0bfb7df3c0f509fa2/artifacts
+end_time: 1754272207858
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: 9363c646f6ac4ab0bfb7df3c0f509fa2
+run_name: defiant-fawn-671
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754272087034
+status: 3
+tags: []
+user_id: suraj

@@ -1,9 +1,14 @@
 old
 venv
-.env
+.env*
 __pycache__
 test.py
 test-openai.py
 models/
-mlruns/
+mlruns/*
 flan-t5-domain-generator
+flan-t5-domain-generator-iterative
+
+.aws-sam/
+./deploy/.aws-sam/
+.ipynb_checkpoints/

@@ -1,0 +1,4 @@
+openai==1.98.0
+python-dotenv==1.1.1
+requests
+numpy

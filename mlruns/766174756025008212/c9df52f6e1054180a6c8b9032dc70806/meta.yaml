@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/c9df52f6e1054180a6c8b9032dc70806/artifacts
+end_time: 1754271896831
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: c9df52f6e1054180a6c8b9032dc70806
+run_name: unique-whale-935
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754271785422
+status: 3
+tags: []
+user_id: suraj

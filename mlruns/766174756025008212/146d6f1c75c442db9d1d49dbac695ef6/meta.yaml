@@ -1,0 +1,14 @@
+artifact_uri: file:///home/suraj/personal_projects/domain_generator/mlruns/766174756025008212/146d6f1c75c442db9d1d49dbac695ef6/artifacts
+end_time: 1754171076608
+entry_point_name: ''
+experiment_id: '766174756025008212'
+lifecycle_stage: active
+run_id: 146d6f1c75c442db9d1d49dbac695ef6
+run_name: fearless-kit-283
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1754152997159
+status: 4
+tags: []
+user_id: suraj
