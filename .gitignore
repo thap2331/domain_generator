@@ -5,7 +5,7 @@ __pycache__
 test.py
 test-openai.py
 models/
-mlruns/766174756025008212/models/
+mlruns/*
 flan-t5-domain-generator
 flan-t5-domain-generator-iterative
 

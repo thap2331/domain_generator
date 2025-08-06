@@ -63,14 +63,15 @@ def predict_domains_for_all_input_texts():
         business_desc = validation_data[i]['business_description']
         domains = all_domains[i]
         industry = validation_data[i]['industry']
+        evaluation_results = eval.fine_tuned_calculate_overall_score(business_desc, domains)
         all_data.append({
             'business_description': business_desc,
             'ground_truth_domains': validation_data[i]['domain_suggestions'],
             'industry': industry,
             'predicted_domains': domains,
-            'evaluation_results': eval.fine_tuned_calculate_overall_score(business_desc, domains)
+            'evaluation_results': evaluation_results
         })
-        scores.append(eval.fine_tuned_calculate_overall_score(business_desc, domains)['overall_score'])
+        scores.append(evaluation_results['overall_score'])
     average_score = sum(scores)/len(scores)
     save_final_metric(average_score)
 

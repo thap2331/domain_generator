@@ -13,7 +13,7 @@ import mlflow
 import mlflow.pytorch
 import os
 from utils import Utils
-from evaluation_framework import QuickEvaluator
+from evaluation_framework import RunEvals, QuickEvaluator
 
 eval = QuickEvaluator()
 utils = Utils()

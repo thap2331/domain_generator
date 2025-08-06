@@ -174,3 +174,5 @@ with mlflow.start_run():
     }
     # Log model
     mlflow.pytorch.log_model(model, f"model-{total_samples}", input_example=input_example)
+
+    
