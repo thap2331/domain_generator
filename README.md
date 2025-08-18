@@ -36,13 +36,6 @@
 
     - Budget Strategy – I planned to reserve any paid usage only for OpenAI api, during model evaluation and testing stages.
 
-    Model Selection Process: I specifically looked for small, instruction-tuned models that could be fine-tuned further. After a bit of digging through Google and Claude, I narrowed it down to two options: `google/flan-t5-base` and `microsoft/DialoGPT-small`. I ultimately chose `google/flan-t5-base` because of the following:
-
-    - The model card emphasized that it had been tuned on "more than 1,000 additional tasks", which made it a strong general-purpose starting point.
-    - It also noted that instruction fine-tuning significantly improves both performance and usability.
-
-    - Finally, I was genuinely curious to see how far I could push a model like this on my own local CPU instance—which made it both a practical and motivating choice.
-
 
 
 - Initial model performance and evaluation metrics 
